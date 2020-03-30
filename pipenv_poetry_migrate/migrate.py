@@ -41,7 +41,7 @@ class PipenvPoetryMigration(object):
 
             if 'source' not in self._pyproject['tool']['poetry']:
                 self._pyproject['tool']['poetry']['source'] = aot()
-            self._pyproject['tool']['poetry']['source'].add(source)
+            self._pyproject['tool']['poetry']['source'].append(source)
 
     def migrate_dependencies(self, *, dev=False):
         prefix = 'dev-' if dev else ''
