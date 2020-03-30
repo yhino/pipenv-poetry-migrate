@@ -2,6 +2,10 @@
 
 This is simple migration script, migrate pipenv to poetry.
 
+## Install
+
+    $ pip install -U pipenv-poetry-migrate
+
 ## Usage
 
     $ pipenv-poetry-migrate -f Pipfile -t pyproject.toml
