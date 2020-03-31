@@ -10,6 +10,40 @@ This is simple migration script, migrate pipenv to poetry.
 
     $ pipenv-poetry-migrate -f Pipfile -t pyproject.toml
 
+When want to run dry-run mode:
+
+    $ pipenv-poetry-migrate -f Pipfile -t pyproject.toml -n
+
+Dry-run mode is `pyproject.toml` file does not overwrite, results are displayed on standard output.
+
+## Migration
+
+### Step 0: Install packages
+
+    $ pip install poetry pipenv-poetry-migrate
+
+### Step 1: Create `pyproject.toml` file
+
+    $ poetry init
+
+### Step 2: Migrate
+
+To migrate `Pipfile` to `pyproject.toml`.
+
+    $ pipenv-poetry-migrate -f Pipfile -t pyproject.toml
+    
+### Step 3: Generate lock file
+
+    $ poetry lock
+
+If there is already a `poetry.lock` file, remove it first.
+
+### Step 4: Installing dependencies
+
+To install the defined dependencies for your project.
+
+    $ poetry install
+
 ## Example
 
 This is an example of a Pipfile to be migrated.
