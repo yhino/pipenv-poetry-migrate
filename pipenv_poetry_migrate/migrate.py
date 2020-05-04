@@ -1,8 +1,8 @@
-from tomlkit import loads, dumps, table, inline_table, aot
+from tomlkit import aot, dumps, inline_table, loads, table
 
 
 def load_toml(filename):
-    with open(filename, 'r') as f:
+    with open(filename, "r") as f:
         return loads(f.read())
 
 
@@ -24,47 +24,47 @@ class PipenvPoetryMigration(object):
         if self._dry_run:
             print(dumps(self._pyproject))
         else:
-            with open(self._pyproject_toml, 'w') as f:
+            with open(self._pyproject_toml, "w") as f:
                 f.write(dumps(self._pyproject))
 
     def migrate_source(self):
-        if 'source' not in self._pipenv:
+        if "source" not in self._pipenv:
             return
 
-        for s in self._pipenv['source']:
-            if s['name'] == 'pypi':
+        for s in self._pipenv["source"]:
+            if s["name"] == "pypi":
                 continue
 
             source = table()
-            source.add('name', s['name'])
-            source.add('url', s['url'])
+            source.add("name", s["name"])
+            source.add("url", s["url"])
 
-            if 'source' not in self._pyproject['tool']['poetry']:
-                self._pyproject['tool']['poetry']['source'] = aot()
-            self._pyproject['tool']['poetry']['source'].append(source)
+            if "source" not in self._pyproject["tool"]["poetry"]:
+                self._pyproject["tool"]["poetry"]["source"] = aot()
+            self._pyproject["tool"]["poetry"]["source"].append(source)
 
     def migrate_dependencies(self, *, dev=False):
-        prefix = 'dev-' if dev else ''
-        pipenv_key = prefix + 'packages'
-        poetry_key = prefix + 'dependencies'
+        prefix = "dev-" if dev else ""
+        pipenv_key = prefix + "packages"
+        poetry_key = prefix + "dependencies"
 
         for name, ver in self._pipenv[pipenv_key].items():
-            if name in self._pyproject['tool']['poetry'][poetry_key]:
+            if name in self._pyproject["tool"]["poetry"][poetry_key]:
                 continue
             if isinstance(ver, dict):
                 tmp = inline_table()
                 tmp.update(ver)
                 ver = tmp
-            self._pyproject['tool']['poetry'][poetry_key].add(name, ver)
+            self._pyproject["tool"]["poetry"][poetry_key].add(name, ver)
 
     def migrate_dev_dependencies(self):
         self.migrate_dependencies(dev=True)
 
     def migrate_scripts(self):
-        if 'scripts' not in self._pipenv:
+        if "scripts" not in self._pipenv:
             return
 
-        for name, cmd in self._pipenv['scripts'].items():
-            if 'scripts' not in self._pyproject['tool']['poetry']:
-                self._pyproject['tool']['poetry']['scripts'] = table()
-            self._pyproject['tool']['poetry']['scripts'].add(name, cmd)
+        for name, cmd in self._pipenv["scripts"].items():
+            if "scripts" not in self._pyproject["tool"]["poetry"]:
+                self._pyproject["tool"]["poetry"]["scripts"] = table()
+            self._pyproject["tool"]["poetry"]["scripts"].add(name, cmd)
