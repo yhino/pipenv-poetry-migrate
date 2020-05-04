@@ -1,13 +1,14 @@
 from tomlkit import aot, dumps, inline_table, loads, table
+from tomlkit.toml_document import TOMLDocument
 
 
-def load_toml(filename):
+def load_toml(filename) -> TOMLDocument:
     with open(filename, "r") as f:
         return loads(f.read())
 
 
 class PipenvPoetryMigration(object):
-    def __init__(self, pipfile, pyproject_toml, *, dry_run=False):
+    def __init__(self, pipfile: str, pyproject_toml: str, *, dry_run: bool = False):
         self._pipenv = load_toml(pipfile)
         self._pyproject = load_toml(pyproject_toml)
         self._pyproject_toml = pyproject_toml
@@ -43,7 +44,7 @@ class PipenvPoetryMigration(object):
                 self._pyproject["tool"]["poetry"]["source"] = aot()
             self._pyproject["tool"]["poetry"]["source"].append(source)
 
-    def migrate_dependencies(self, *, dev=False):
+    def migrate_dependencies(self, *, dev: bool = False):
         prefix = "dev-" if dev else ""
         pipenv_key = prefix + "packages"
         poetry_key = prefix + "dependencies"

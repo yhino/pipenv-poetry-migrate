@@ -17,6 +17,7 @@ pytest-cov = "^2.8.1"
 flake8 = "^3.7.9"
 black = "^19.10b0"
 isort = {extras = ["pyproject"], version = "^4.3.21"}
+mypy = "^0.770"
 
 [tool.poetry.scripts]
 pipenv-poetry-migrate = "pipenv_poetry_migrate.cli:main"
