@@ -1,4 +1,6 @@
 # pipenv-poetry-migrate
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate?ref=badge_shield)
+
 
 This is simple migration script, migrate pipenv to poetry.
 
@@ -100,3 +102,7 @@ pytest = "^5.2"
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate?ref=badge_large)
