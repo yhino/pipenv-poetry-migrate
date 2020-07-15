@@ -14,21 +14,24 @@ class PipenvPoetryMigration(object):
         self._pyproject_toml = pyproject_toml
         self._dry_run = dry_run
 
-    def migrate(self):
-        self.migrate_source()
-        self.migrate_dependencies()
-        self.migrate_dev_dependencies()
-        self.migrate_scripts()
-        self.save()
+    def pyproject_toml(self) -> str:
+        return self._pyproject_toml
 
-    def save(self):
+    def migrate(self):
+        self._migrate_source()
+        self._migrate_dependencies()
+        self._migrate_dev_dependencies()
+        self._migrate_scripts()
+        self._save()
+
+    def _save(self):
         if self._dry_run:
             print(dumps(self._pyproject))
         else:
             with open(self._pyproject_toml, "w") as f:
                 f.write(dumps(self._pyproject))
 
-    def migrate_source(self):
+    def _migrate_source(self):
         if "source" not in self._pipenv:
             return
 
@@ -44,7 +47,7 @@ class PipenvPoetryMigration(object):
                 self._pyproject["tool"]["poetry"]["source"] = aot()
             self._pyproject["tool"]["poetry"]["source"].append(source)
 
-    def migrate_dependencies(self, *, dev: bool = False):
+    def _migrate_dependencies(self, *, dev: bool = False):
         prefix = "dev-" if dev else ""
         pipenv_key = prefix + "packages"
         poetry_key = prefix + "dependencies"
@@ -58,10 +61,10 @@ class PipenvPoetryMigration(object):
                 ver = tmp
             self._pyproject["tool"]["poetry"][poetry_key].add(name, ver)
 
-    def migrate_dev_dependencies(self):
-        self.migrate_dependencies(dev=True)
+    def _migrate_dev_dependencies(self):
+        self._migrate_dependencies(dev=True)
 
-    def migrate_scripts(self):
+    def _migrate_scripts(self):
         if "scripts" not in self._pipenv:
             return
 

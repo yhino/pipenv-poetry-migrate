@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pipenv-poetry-migrate-tests"
+version = "0.1.0"
+description = ""
+authors = ["Yoshiyuki HINO <yhinoz@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
