@@ -27,4 +27,4 @@ test: clean
 		tests
 
 tox:
-	@tox
+	@poetry run tox
