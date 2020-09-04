@@ -10,7 +10,12 @@ format: clean
 	@poetry run black .
 	@poetry run isort -y
 
-test:
+lint: clean
+	@poetry run black --check .
+	@poetry run flake8
+	@poetry run mypy .
+
+test: clean
 	@poetry run pytest --verbose \
 		--cov=pipenv_poetry_migrate \
 		--cov-report=term \
