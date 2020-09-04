@@ -19,12 +19,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
+
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-    
+
     - name: Install poetry
       run: |
         curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
@@ -33,7 +33,7 @@ jobs:
     - name: Install dependencies
       run: |
         poetry install
-    
+
     - name: Run Tox
       run: |
-        poetry run tox
+        poetry run tox -e black,flake8,mypy,py
