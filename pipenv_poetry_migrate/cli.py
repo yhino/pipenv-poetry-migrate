@@ -15,7 +15,9 @@ def main():
     args = parser.parse_args()
 
     PipenvPoetryMigration(
-        args.pipfile, args.pyproject_toml, dry_run=args.dry_run,
+        args.pipfile,
+        args.pyproject_toml,
+        dry_run=args.dry_run,
     ).migrate()
 
 

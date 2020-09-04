@@ -11,8 +11,11 @@ format: clean
 	@poetry run isort -y
 
 lint: clean
+	@poetry run black --version
 	@poetry run black --check .
+	@poetry run flake8 --version
 	@poetry run flake8
+	@poetry run mypy --version
 	@poetry run mypy .
 
 test: clean
