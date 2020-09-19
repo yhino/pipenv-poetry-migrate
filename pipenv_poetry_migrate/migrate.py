@@ -1,16 +1,12 @@
-from tomlkit import aot, dumps, inline_table, loads, table
-from tomlkit.toml_document import TOMLDocument
+from tomlkit import aot, dumps, inline_table, table
 
-
-def load_toml(filename) -> TOMLDocument:
-    with open(filename, "r") as f:
-        return loads(f.read())
+from pipenv_poetry_migrate.loader import load_pipfile, load_pyproject_toml
 
 
 class PipenvPoetryMigration(object):
     def __init__(self, pipfile: str, pyproject_toml: str, *, dry_run: bool = False):
-        self._pipenv = load_toml(pipfile)
-        self._pyproject = load_toml(pyproject_toml)
+        self._pipenv = load_pipfile(pipfile)
+        self._pyproject = load_pyproject_toml(pyproject_toml)
         self._pyproject_toml = pyproject_toml
         self._dry_run = dry_run
 

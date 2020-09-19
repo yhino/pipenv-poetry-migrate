@@ -1,5 +1,10 @@
+import sys
 from argparse import ArgumentParser
 
+from pipenv_poetry_migrate.loader import (
+    PipfileNotFoundError,
+    PyprojectTomlNotFoundError,
+)
 from pipenv_poetry_migrate.migrate import PipenvPoetryMigration
 
 
@@ -14,11 +19,18 @@ def main():
     parser.add_argument("-n", "--dry-run", help="dry-run", action="store_true")
     args = parser.parse_args()
 
-    PipenvPoetryMigration(
-        args.pipfile,
-        args.pyproject_toml,
-        dry_run=args.dry_run,
-    ).migrate()
+    try:
+        PipenvPoetryMigration(
+            args.pipfile,
+            args.pyproject_toml,
+            dry_run=args.dry_run,
+        ).migrate()
+    except PipfileNotFoundError:
+        print(f"Pipfile '{args.pipfile}' not found")
+        sys.exit(1)
+    except PyprojectTomlNotFoundError:
+        print("Please run `poetry init` first")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
