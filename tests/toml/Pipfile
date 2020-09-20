@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 requests = "*"
+"uvicorn[standard]" = {version="*", index="pypi"}
+"celery[redis,msgpack]" = "*"
 
 [dev-packages]
 pytest = "^5.2"
+isort = {extras = ["pyproject"], version = "^4.3.21"}

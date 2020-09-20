@@ -1,3 +1,6 @@
+import re
+from typing import Optional, Tuple
+
 from tomlkit import aot, dumps, inline_table, table
 
 from pipenv_poetry_migrate.loader import load_pipfile, load_pyproject_toml
@@ -49,12 +52,23 @@ class PipenvPoetryMigration(object):
         poetry_key = prefix + "dependencies"
 
         for name, ver in self._pipenv[pipenv_key].items():
+            name, extras = self._split_extras(name)
             if name in self._pyproject["tool"]["poetry"][poetry_key]:
                 continue
-            if isinstance(ver, dict):
+
+            if extras is not None:
+                tmp = inline_table()
+                tmp["extras"] = extras.split(",")
+                if isinstance(ver, dict):
+                    tmp.update(ver)
+                else:
+                    tmp["version"] = ver
+                ver = tmp
+            elif isinstance(ver, dict):
                 tmp = inline_table()
                 tmp.update(ver)
                 ver = tmp
+
             self._pyproject["tool"]["poetry"][poetry_key].add(name, ver)
 
     def _migrate_dev_dependencies(self):
@@ -68,3 +82,15 @@ class PipenvPoetryMigration(object):
             if "scripts" not in self._pyproject["tool"]["poetry"]:
                 self._pyproject["tool"]["poetry"]["scripts"] = table()
             self._pyproject["tool"]["poetry"]["scripts"].add(name, cmd)
+
+    @staticmethod
+    def _split_extras(name: str) -> Tuple[str, Optional[str]]:
+        m = re.match(r"^(.+)\[([^\]]+)\]$", name)
+        extras = None
+        if m:
+            name_no_extras = m.group(1)
+            extras = m.group(2)
+        else:
+            name_no_extras = name
+
+        return name_no_extras, extras
