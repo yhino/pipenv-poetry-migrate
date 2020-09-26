@@ -7,8 +7,10 @@ clean:
 	@find . -type d -name '*.py[co]' -exec rm -rf {} +
 
 format: clean
+	@poetry run black --version
 	@poetry run black .
-	@poetry run isort -y
+	@echo "isort, version `poetry run isort --vn`"
+	@poetry run isort .
 
 lint: clean
 	@poetry run black --version
