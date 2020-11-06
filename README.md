@@ -6,19 +6,9 @@
     <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate?ref=badge_shield"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate.svg?type=shield" alt="FOSSA Status"></a>
 </p>
 
-## Install
+## Setup
 
     $ pip install -U pipenv-poetry-migrate
-
-## Usage
-
-    $ pipenv-poetry-migrate -f Pipfile -t pyproject.toml
-
-When want to run dry-run mode:
-
-    $ pipenv-poetry-migrate -f Pipfile -t pyproject.toml -n
-
-Dry-run mode is `pyproject.toml` file does not overwrite, results are displayed on standard output.
 
 ## Migration
 
@@ -35,7 +25,13 @@ Dry-run mode is `pyproject.toml` file does not overwrite, results are displayed 
 To migrate `Pipfile` to `pyproject.toml`.
 
     $ pipenv-poetry-migrate -f Pipfile -t pyproject.toml
-    
+
+When want to run dry-run mode:
+
+    $ pipenv-poetry-migrate -f Pipfile -t pyproject.toml -n
+
+Dry-run mode is `pyproject.toml` file does not overwrite, results are displayed on standard output.
+
 ### Step 3: Generate lock file
 
     $ poetry lock
@@ -48,7 +44,7 @@ To install the defined dependencies for your project.
 
     $ poetry install
 
-## Example
+## Example output
 
 This is an example of a Pipfile to be migrated.
 
@@ -104,7 +100,6 @@ pytest = "^5.2"
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 ```
-
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate?ref=badge_large)
