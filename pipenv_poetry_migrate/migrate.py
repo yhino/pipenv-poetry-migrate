@@ -1,9 +1,11 @@
 import re
-from typing import Optional, Tuple
+from typing import Any, Dict, Optional, Tuple, Union
 
 from tomlkit import aot, dumps, inline_table, table
+from tomlkit.items import InlineTable
 
 from pipenv_poetry_migrate.loader import load_pipfile, load_pyproject_toml
+from pipenv_poetry_migrate.translator import translate_properties
 
 
 class PipenvPoetryMigration(object):
@@ -51,25 +53,12 @@ class PipenvPoetryMigration(object):
         pipenv_key = prefix + "packages"
         poetry_key = prefix + "dependencies"
 
-        for name, ver in self._pipenv[pipenv_key].items():
+        for name, properties in self._pipenv[pipenv_key].items():
             name, extras = self._split_extras(name)
             if name in self._pyproject["tool"]["poetry"][poetry_key]:
                 continue
-
-            if extras is not None:
-                tmp = inline_table()
-                tmp["extras"] = extras.split(",")
-                if isinstance(ver, dict):
-                    tmp.update(ver)
-                else:
-                    tmp["version"] = ver
-                ver = tmp
-            elif isinstance(ver, dict):
-                tmp = inline_table()
-                tmp.update(ver)
-                ver = tmp
-
-            self._pyproject["tool"]["poetry"][poetry_key].add(name, ver)
+            properties = self._reformat_dependency_properties(extras, properties)
+            self._pyproject["tool"]["poetry"][poetry_key].add(name, properties)
 
     def _migrate_dev_dependencies(self):
         self._migrate_dependencies(dev=True)
@@ -94,3 +83,16 @@ class PipenvPoetryMigration(object):
             name_no_extras = name
 
         return name_no_extras, extras
+
+    @staticmethod
+    def _reformat_dependency_properties(
+        extras: Optional[str], properties: Union[str, Dict[str, Any]]
+    ) -> Union[str, InlineTable]:
+        formatted = inline_table()
+        if extras is not None:
+            formatted.update({"extras": extras.split(",")})
+        if isinstance(properties, dict):
+            formatted.update(translate_properties(properties))
+        else:
+            formatted.append("version", properties)
+        return formatted["version"] if len(formatted) == 1 else formatted
