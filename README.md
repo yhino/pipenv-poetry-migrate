@@ -2,15 +2,9 @@
 <p align="center">This is simple migration script, migrate pipenv to poetry.</p>
 
 <p align="center">
-    <a href="https://github.com/yhino/pipenv-poetry-migrate/actions?query=workflow%3Abuild">
-        <img src="https://github.com/yhino/pipenv-poetry-migrate/workflows/build/badge.svg" alt="build">
-    </a>
-    <a href="https://codecov.io/gh/yhino/pipenv-poetry-migrate">
-        <img src="https://codecov.io/gh/yhino/pipenv-poetry-migrate/branch/master/graph/badge.svg?token=LHZGQ8MMWT" alt="Codecov">
-    </a>
-    <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate?ref=badge_shield">
-        <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate.svg?type=shield" alt="FOSSA Status">
-    </a>
+    <a href="https://github.com/yhino/pipenv-poetry-migrate/actions?query=workflow%3Abuild"><img src="https://github.com/yhino/pipenv-poetry-migrate/workflows/build/badge.svg" alt="build"></a>
+    <a href="https://codecov.io/gh/yhino/pipenv-poetry-migrate"><img src="https://codecov.io/gh/yhino/pipenv-poetry-migrate/branch/master/graph/badge.svg?token=LHZGQ8MMWT" alt="Codecov"></a>
+    <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate?ref=badge_shield"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate.svg?type=shield" alt="FOSSA Status"></a>
 </p>
 
 ## Setup
