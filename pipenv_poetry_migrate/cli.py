@@ -1,6 +1,8 @@
 import sys
 from argparse import ArgumentParser
 
+import rich
+
 from pipenv_poetry_migrate import __version__
 from pipenv_poetry_migrate.loader import (
     PipfileNotFoundError,
@@ -30,10 +32,10 @@ def main():
             dry_run=args.dry_run,
         ).migrate()
     except PipfileNotFoundError:
-        print(f"Pipfile '{args.pipfile}' not found", file=sys.stderr)
+        rich.print(f"[red]Pipfile '{args.pipfile}' not found", file=sys.stderr)
         sys.exit(1)
     except PyprojectTomlNotFoundError:
-        print("Please run `poetry init` first", file=sys.stderr)
+        rich.print("[red]Please run `poetry init` first", file=sys.stderr)
         sys.exit(1)
     else:
         sys.exit(0)

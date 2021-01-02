@@ -2,6 +2,7 @@ import re
 import sys
 from typing import Any, Dict, Optional, Tuple, Union
 
+import rich
 from tomlkit import aot, dumps, inline_table, table
 from tomlkit.items import InlineTable
 
@@ -67,8 +68,8 @@ class PipenvPoetryMigration(object):
     def _migrate_scripts(self):
         if "scripts" not in self._pipenv:
             return
-        print(
-            "[WARNING] poetry does not have the function of task runner."
+        rich.print(
+            "[yellow]!!WARNING!! poetry does not have the function of task runner."
             " migration of the scripts section will be skipped.",
             file=sys.stderr,
         )
