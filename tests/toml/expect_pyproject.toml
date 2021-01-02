@@ -16,6 +16,10 @@ flask = {git = "https://github.com/pallets/flask.git", rev = "1.1.1", extras = [
 pytest = "^5.2"
 isort = {extras = ["pyproject"], version = "^4.3.21"}
 
+[[tool.poetry.source]]
+name = 'private'
+url = 'https://example.com/simple'
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
