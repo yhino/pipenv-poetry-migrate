@@ -13,3 +13,6 @@ pipenv-poetry-migrate = {editable=true, git="https://github.com/yhino/pipenv-poe
 [dev-packages]
 pytest = "^5.2"
 isort = {extras = ["pyproject"], version = "^4.3.21"}
+
+[scripts]
+test = "pytest --verbose tests"

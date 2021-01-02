@@ -1,4 +1,5 @@
 import re
+import sys
 from typing import Any, Dict, Optional, Tuple, Union
 
 from tomlkit import aot, dumps, inline_table, table
@@ -66,11 +67,11 @@ class PipenvPoetryMigration(object):
     def _migrate_scripts(self):
         if "scripts" not in self._pipenv:
             return
-
-        for name, cmd in self._pipenv["scripts"].items():
-            if "scripts" not in self._pyproject["tool"]["poetry"]:
-                self._pyproject["tool"]["poetry"]["scripts"] = table()
-            self._pyproject["tool"]["poetry"]["scripts"].add(name, cmd)
+        print(
+            "[WARNING] poetry does not have the function of task runner."
+            " migration of the scripts section will be skipped.",
+            file=sys.stderr,
+        )
 
     @staticmethod
     def _split_extras(name: str) -> Tuple[str, Optional[str]]:

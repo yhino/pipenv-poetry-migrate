@@ -9,13 +9,14 @@ from pipenv_poetry_migrate.cli import main
 
 def test_main(monkeypatch, capfd, pipfile: Path, pyproject_toml: Path):
     with monkeypatch.context() as m:
-        argv = ["-f", str(pipfile), "-t", str(pyproject_toml), "-n"]
-        m.setattr(sys, "argv", [""] + argv)
-        main()
+        with pytest.raises(SystemExit) as e:
+            argv = ["-f", str(pipfile), "-t", str(pyproject_toml), "-n"]
+            m.setattr(sys, "argv", [""] + argv)
+            main()
 
+            assert e.value.code == 0
         captured = capfd.readouterr()
         assert captured.out != ""
-        assert captured.err == ""
 
 
 def test_main_show_version(monkeypatch, capfd):

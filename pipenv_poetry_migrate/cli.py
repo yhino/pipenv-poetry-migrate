@@ -35,6 +35,8 @@ def main():
     except PyprojectTomlNotFoundError:
         print("Please run `poetry init` first", file=sys.stderr)
         sys.exit(1)
+    else:
+        sys.exit(0)
 
 
 if __name__ == "__main__":
