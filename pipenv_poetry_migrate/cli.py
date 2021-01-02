@@ -30,10 +30,10 @@ def main():
             dry_run=args.dry_run,
         ).migrate()
     except PipfileNotFoundError:
-        print(f"Pipfile '{args.pipfile}' not found")
+        print(f"Pipfile '{args.pipfile}' not found", file=sys.stderr)
         sys.exit(1)
     except PyprojectTomlNotFoundError:
-        print("Please run `poetry init` first")
+        print("Please run `poetry init` first", file=sys.stderr)
         sys.exit(1)
 
 
