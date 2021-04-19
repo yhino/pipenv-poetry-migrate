@@ -2,26 +2,14 @@ name: release
 
 on:
   push:
-    tags:
-      - "*.*.*"
+    branches: [master]
 
 jobs:
   release:
-
+    if: contains(github.event.head_commit.message, ':bookmark:')
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-
-    - name: Create Release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        draft: false
-        prerelease: false
 
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
@@ -31,21 +19,13 @@ jobs:
     - name: Install poetry
       run: |
         curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-        source $HOME/.poetry/env
 
-    - name: Install dependencies
-      run: |
-        source $HOME/.poetry/env
-        poetry install --no-dev
-
-    - name: Build package
-      run: |
-        source $HOME/.poetry/env
-        poetry build
-
-    - name: Publish to PyPI
+    - name: Semantic Release
       env:
-        POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOKEN }}
+        PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
       run: |
         source $HOME/.poetry/env
-        poetry publish
+        pip install python-semantic-release
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        semantic-release publish -v DEBUG -D commit_author="github-actions <github-actions@github.com>"
