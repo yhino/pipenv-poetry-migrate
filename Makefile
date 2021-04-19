@@ -1,3 +1,10 @@
+NEW_VERSION := $(shell poetry run semantic-release print-version)
+
+release:
+ifneq ($(NEW_VERSION),)
+	@git ci --allow-empty --message=":bookmark: $(NEW_VERSION)"
+endif
+
 clean:
 	@rm -rf build dist .eggs *.egg-info
 	@rm -rf .coverage coverage.xml htmlcov report.xml .tox
