@@ -1,5 +1,9 @@
+import tomlkit
+
 from pipenv_poetry_migrate import __version__
 
 
 def test_version():
-    assert __version__ == "0.1.4"
+    with open("pyproject.toml", "r") as f:
+        p = tomlkit.loads(f.read())
+    assert __version__ == p["tool"]["poetry"]["version"]
