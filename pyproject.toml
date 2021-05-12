@@ -26,24 +26,6 @@ python-semantic-release = "^7.15.3"
 [tool.poetry.scripts]
 pipenv-poetry-migrate = "pipenv_poetry_migrate.cli:main"
 
-[tool.black]
-line-length = 88
-include = '\.pyi?$'
-exclude = '''
-/(
-    \.eggs
-  | \.git
-  | \.hg
-  | \.mypy_cache
-  | \.tox
-  | \.venv
-  | _build
-  | buck-out
-  | build
-  | dist
-)/
-'''
-
 [tool.isort]
 profile = "black"
 src_paths = ["pipenv_poetry_migrate", "tests"]
