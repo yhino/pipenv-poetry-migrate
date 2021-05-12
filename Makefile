@@ -1,4 +1,4 @@
-NEW_VERSION := $(shell poetry run semantic-release print-version)
+NEW_VERSION := $(shell poetry run semantic-release print-version 2>/dev/null)
 
 release:
 ifneq ($(NEW_VERSION),)
