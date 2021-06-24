@@ -97,5 +97,8 @@ class PipenvPoetryMigration(object):
             formatted.update(translate_properties(properties))
         else:
             formatted.append("version", properties)
-        return formatted["version"] if len(formatted) == 1 and "version" in formatted.keys() else formatted
-
+        return (
+            formatted["version"]
+            if len(formatted) == 1 and "version" in formatted.keys()
+            else formatted
+        )
