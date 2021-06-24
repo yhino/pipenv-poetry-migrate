@@ -103,5 +103,11 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 ```
 
+## Contributing
+To run tests, :
+1) `poetry install`  # get environment setup
+2) `make test`      # run the tests
+Test cases are in `tests/toml`, update `Pipfile` with additional entries and `expect_pyproject.toml` with expected output
+
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate?ref=badge_large)
