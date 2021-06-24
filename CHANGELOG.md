@@ -2,6 +2,28 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.5 (2021-06-24)
+### :bug:
+* :bug: Merge pull request #18 from lingster/master ([`6f37f83`](https://github.com/yhino/pipenv-poetry-migrate/commit/6f37f830c6063f8b9125294c93678b1d6978fa9c))
+
+### Other
+* :bookmark: 0.1.5  ([`da1f617`](https://github.com/yhino/pipenv-poetry-migrate/commit/da1f617c4b664b9d32c7a10b26a3c5c0d79706d4))
+* :construction_worker: change to fetch all history when executing release workflow  ([`85c29e9`](https://github.com/yhino/pipenv-poetry-migrate/commit/85c29e9f88da4aeaddb416f149bad25de613e9eb))
+* :bookmark: 0.1.5  ([`5ccffc5`](https://github.com/yhino/pipenv-poetry-migrate/commit/5ccffc5b8a9787abfb49f393115a0d0c7407733c))
+* :rotating_light: fix linter warnings, and update the linters version to latest  ([`32b223a`](https://github.com/yhino/pipenv-poetry-migrate/commit/32b223ac121bc38ea2e3be4a64b8d8a6d892c7b2))
+* :rotating_light: fix linter warnings  ([`7a092ca`](https://github.com/yhino/pipenv-poetry-migrate/commit/7a092caf61dd8d1407fff5aa66a2641635a06b97))
+* Merge pull request #17 from yhino/fix-makefile ([`484a2d1`](https://github.com/yhino/pipenv-poetry-migrate/commit/484a2d14d0f28a97d251c7d46bcdef41ab735a26))
+* :wrench: suppress error output when getting a new version  ([`378c121`](https://github.com/yhino/pipenv-poetry-migrate/commit/378c121df27cbbf0a5df269afdfbdb73a8559660))
+* Merge pull request #16 from yhino/remove-black-default-settings ([`f507c24`](https://github.com/yhino/pipenv-poetry-migrate/commit/f507c24c76b054e585e7b16e895d76f38d0f5a87))
+* :wrench: remove default settings for black  ([`f157fd9`](https://github.com/yhino/pipenv-poetry-migrate/commit/f157fd964b1dce79eda9b710d7dd972f5e324cff))
+* Support me when you feel like it ([`7d57f53`](https://github.com/yhino/pipenv-poetry-migrate/commit/7d57f53d033d40c210eae0bcf1224c075f46fddf))
+* Merge pull request #15 from yhino/fix-bump-version ([`feb279b`](https://github.com/yhino/pipenv-poetry-migrate/commit/feb279be5433381f44676bb5f6c426cee1139707))
+* :construction_worker: fix release workflow  ([`cebe882`](https://github.com/yhino/pipenv-poetry-migrate/commit/cebe882e07792e0da48e8a8e4eba4e7e12f61960))
+* Merge pull request #14 from yhino/auto-bump-version ([`e54ebe2`](https://github.com/yhino/pipenv-poetry-migrate/commit/e54ebe2f127b5ac0577f25831d1f8ee30073b7e0))
+* :construction_worker: automating the release process  ([`93c4a07`](https://github.com/yhino/pipenv-poetry-migrate/commit/93c4a07139d780f4148ae3f062e00f9898bc660b))
+* Merge pull request #13 from yhino/fix-version-test ([`21d64c9`](https://github.com/yhino/pipenv-poetry-migrate/commit/21d64c96f314b97d028afb27672f228bbdae33bf))
+* :white_check_mark: fixed to get version from pyproject.toml when testing  ([`982ea22`](https://github.com/yhino/pipenv-poetry-migrate/commit/982ea224f705ee46ac19413e0b930053aa77926b))
+
 ## v0.1.4 (2021-04-11)
 
 ### :sparkles:
