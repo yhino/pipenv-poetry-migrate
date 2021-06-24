@@ -28,7 +28,7 @@ lint: clean
 	@poetry run mypy .
 
 test: clean
-	@poetry run pytest --verbose \
+	@poetry run pytest -vv \
 		--cov=pipenv_poetry_migrate \
 		--cov-report=term \
 		--cov-report=xml \
