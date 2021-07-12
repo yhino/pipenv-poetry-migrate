@@ -55,7 +55,7 @@ class PipenvPoetryMigration(object):
         pipenv_key = prefix + "packages"
         poetry_key = prefix + "dependencies"
 
-        for name, properties in self._pipenv[pipenv_key].items():
+        for name, properties in self._pipenv.get(pipenv_key, {}).items():
             name, extras = self._split_extras(name)
             if name in self._pyproject["tool"]["poetry"][poetry_key]:
                 continue
