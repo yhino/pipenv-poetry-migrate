@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.6 (2021-07-12)
+### :bug:
+* :bug: allows no "dev-packages" in Pipfile ([#19](https://github.com/yhino/pipenv-poetry-migrate/issues/19)) ([`f8aa7b7`](https://github.com/yhino/pipenv-poetry-migrate/commit/f8aa7b7af2d3330e463b1e903b0ecf38adfeda07))
+
+### Other
+* :bookmark: 0.1.6  ([`f4762df`](https://github.com/yhino/pipenv-poetry-migrate/commit/f4762dfe643b2bfad9d6f0e0dc6eea09afc74113))
+
 ## v0.1.5 (2021-06-24)
 ### :bug:
 * :bug: Merge pull request #18 from lingster/master ([`6f37f83`](https://github.com/yhino/pipenv-poetry-migrate/commit/6f37f830c6063f8b9125294c93678b1d6978fa9c))
