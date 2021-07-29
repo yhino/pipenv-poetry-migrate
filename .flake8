@@ -1,13 +1,10 @@
 [flake8]
 max-line-length = 88
-ignore = E203, W503, W504
-exclude =
-    .git
+extend-ignore = E203
+extend-exclude =
     .github
-    .tox
     .venv
     .mypy_cache
     .pytest_cache
-    __pycache__
     build
     dist
