@@ -21,9 +21,25 @@ def expect_pyproject_toml() -> Path:
 
 
 @pytest.fixture
+def expect_pyproject_toml_with_use_group_notation() -> Path:
+    return Path("tests/toml/expect_pyproject_with_use_group_notation.toml")
+
+
+@pytest.fixture
 def pipenv_poetry_migration(
     tmp_path: Path, pipfile: Path, pyproject_toml: Path
 ) -> PipenvPoetryMigration:
     replica_pyproject_toml = tmp_path / "pyproject.toml"
     replica_pyproject_toml.write_bytes(pyproject_toml.read_bytes())
     return PipenvPoetryMigration(str(pipfile), str(replica_pyproject_toml))
+
+
+@pytest.fixture
+def pipenv_poetry_migration_with_use_group_notation(
+    tmp_path: Path, pipfile: Path, pyproject_toml: Path
+) -> PipenvPoetryMigration:
+    replica_pyproject_toml = tmp_path / "pyproject.toml"
+    replica_pyproject_toml.write_bytes(pyproject_toml.read_bytes())
+    return PipenvPoetryMigration(
+        str(pipfile), str(replica_pyproject_toml), use_group_notation=True
+    )

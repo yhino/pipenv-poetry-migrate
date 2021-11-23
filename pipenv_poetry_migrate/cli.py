@@ -19,6 +19,12 @@ def main():
     parser.add_argument(
         "-t", "--pyproject-toml", type=str, required=True, help="path to pyproject.toml"
     )
+    parser.add_argument(
+        "--use-group-notation",
+        "--use-group",
+        help="migrate development dependencies with the new group notation",
+        action="store_true",
+    )
     parser.add_argument("-n", "--dry-run", help="dry-run", action="store_true")
     parser.add_argument(
         "-v", "--version", help="show version", action="version", version=__version__
@@ -29,6 +35,7 @@ def main():
         PipenvPoetryMigration(
             args.pipfile,
             args.pyproject_toml,
+            use_group_notation=args.use_group_notation,
             dry_run=args.dry_run,
         ).migrate()
     except PipfileNotFoundError:
