@@ -95,7 +95,7 @@ class PipenvPoetryMigration(object):
 
             # if there is no dependency, remove the traditional notation
             if len(self._pyproject["tool"]["poetry"]["dev-dependencies"]) < 1:
-                del self._pyproject["tool"]["poetry"]["dev-dependencies"]
+                self._pyproject["tool"]["poetry"].remove("dev-dependencies")
         else:
             self._migrate_dependencies(
                 pipenv_key="dev-packages", poetry_key="dev-dependencies"
