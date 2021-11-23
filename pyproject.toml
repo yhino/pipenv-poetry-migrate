@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pipenv-poetry-migrate"
-version = "0.1.6"
+version = "0.2.0"
 description = "simple migration script, migrate pipenv to poetry"
 authors = ["Yoshiyuki HINO <yhinoz@gmail.com>"]
 license = "Apache-2.0"

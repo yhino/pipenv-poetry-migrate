@@ -2,6 +2,17 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2021-11-23)
+### :sparkles:
+* :sparkles:  support dependency group notation (#24) empty commit for version up  ([`aa80e88`](https://github.com/yhino/pipenv-poetry-migrate/commit/aa80e8830ad58b900e0538c2be5fc1bbcc3701be))
+
+### Other
+* :bookmark: 0.2.0  ([`ff54439`](https://github.com/yhino/pipenv-poetry-migrate/commit/ff544393e48f14cf7c6001abbf09720d51aaa403))
+* Support dependency group notation ([#24](https://github.com/yhino/pipenv-poetry-migrate/issues/24)) ([`ddfed9c`](https://github.com/yhino/pipenv-poetry-migrate/commit/ddfed9ca3cd18dad2af58374a587f874256830a2))
+* :construction_worker:  upgrade codecov github action ([#22](https://github.com/yhino/pipenv-poetry-migrate/issues/22)) ([`ba2cfbc`](https://github.com/yhino/pipenv-poetry-migrate/commit/ba2cfbc0e5f4d76f82492aad9b4f957efe8e6719))
+* :construction_worker: add test configuration for python3.9 ([#21](https://github.com/yhino/pipenv-poetry-migrate/issues/21)) ([`fba4670`](https://github.com/yhino/pipenv-poetry-migrate/commit/fba467078667208ed0084fa867dedab03a3c5619))
+* :wrench: fix flake8 settings ([#20](https://github.com/yhino/pipenv-poetry-migrate/issues/20)) ([`663c2da`](https://github.com/yhino/pipenv-poetry-migrate/commit/663c2dab57c36c9c64725dff2d907bb3c0a1fb58))
+
 ## v0.1.6 (2021-07-12)
 ### :bug:
 * :bug: allows no "dev-packages" in Pipfile ([#19](https://github.com/yhino/pipenv-poetry-migrate/issues/19)) ([`f8aa7b7`](https://github.com/yhino/pipenv-poetry-migrate/commit/f8aa7b7af2d3330e463b1e903b0ecf38adfeda07))
