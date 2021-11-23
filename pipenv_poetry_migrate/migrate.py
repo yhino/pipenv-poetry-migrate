@@ -3,8 +3,9 @@ import sys
 from typing import Any, Dict, Optional, Tuple, Union
 
 import rich
-from tomlkit import aot, dumps, inline_table, table
-from tomlkit.items import InlineTable
+from tomlkit import aot, dumps, inline_table, nl, table
+from tomlkit.container import Container
+from tomlkit.items import InlineTable, Table, Trivia
 
 from pipenv_poetry_migrate.loader import load_pipfile, load_pyproject_toml
 from pipenv_poetry_migrate.translator import translate_properties
@@ -53,6 +54,7 @@ class PipenvPoetryMigration(object):
             source = table()
             source.add("name", s["name"])
             source.add("url", s["url"])
+            source.add(nl())
 
             if "source" not in self._pyproject["tool"]["poetry"]:
                 self._pyproject["tool"]["poetry"]["source"] = aot()
@@ -70,22 +72,22 @@ class PipenvPoetryMigration(object):
 
     def _migrate_dependency_groups(self, pipenv_key: str, group_name: str):
         if "group" not in self._pyproject["tool"]["poetry"]:
-            self._pyproject["tool"]["poetry"]["group"] = {}
+            self._pyproject["tool"]["poetry"]["group"] = Table(
+                Container(), Trivia(), False, is_super_table=True
+            )
         if group_name not in self._pyproject["tool"]["poetry"]["group"]:
-            self._pyproject["tool"]["poetry"]["group"][group_name] = {
-                "dependencies": table()
-            }
+            self._pyproject["tool"]["poetry"]["group"][group_name] = Table(
+                Container(), Trivia(), False, is_super_table=True
+            ).add("dependencies", table())
 
-        group_dependencies = table()
+        group = self._pyproject["tool"]["poetry"]["group"][group_name]
         for name, properties in self._pipenv.get(pipenv_key, {}).items():
             name, extras = self._split_extras(name)
-            if name in group_dependencies:
+            if name in group["dependencies"]:
                 continue
             properties = self._reformat_dependency_properties(extras, properties)
-            group_dependencies.add(name, properties)
-        self._pyproject["tool"]["poetry"]["group"][group_name]["dependencies"].update(
-            group_dependencies,
-        )
+            group["dependencies"].add(name, properties)
+        self._pyproject["tool"]["poetry"]["group"][group_name] = group
 
     def _migrate_dev_dependencies(self):
         if self._use_group_notation:
