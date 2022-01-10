@@ -9,21 +9,19 @@
     <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate?ref=badge_shield"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate.svg?type=shield" alt="FOSSA Status"></a>
 </p>
 
-## Setup
+## :rocket: Get Started
 
-    $ pip install -U pipenv-poetry-migrate
+### Installation
 
-## Migration
+    $ pip install -U poetry pipenv-poetry-migrate
 
-### Step 0: Install packages
+### Migration
 
-    $ pip install poetry pipenv-poetry-migrate
-
-### Step 1: Create `pyproject.toml` file
+#### Step 1: Create `pyproject.toml` file
 
     $ poetry init
 
-### Step 2: Migrate
+#### Step 2: Migrate
 
 To migrate `Pipfile` to `pyproject.toml`.
 
@@ -35,19 +33,23 @@ When want to run dry-run mode:
 
 Dry-run mode is `pyproject.toml` file does not overwrite, results are displayed on standard output.
 
-### Step 3: Generate lock file
+:seedling: Use the `--use-group-notation` option if you want to migrate to [the new notation supported in poetry 1.2](https://python-poetry.org/docs/master/managing-dependencies/#dependency-groups).
+
+    $ pipenv-poetry-migrate -f Pipfile -t pyproject.toml --use-group-notation
+
+#### Step 3: Generate lock file
 
     $ poetry lock
 
 If there is already a `poetry.lock` file, remove it first.
 
-### Step 4: Installing dependencies
+#### Step 4: Installing dependencies
 
 To install the defined dependencies for your project.
 
     $ poetry install
 
-## Example output
+### Example output
 
 This is an example of a Pipfile to be migrated.
 
@@ -104,11 +106,15 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 ```
 
-## Contributing
-To run tests, :
+## :handshake: Contributing
+
+To run tests:
+
 1) `poetry install`  # get environment setup
 2) `make test`      # run the tests
+
 Test cases are in `tests/toml`, update `Pipfile` with additional entries and `expect_pyproject.toml` with expected output
 
-## License
+## :pencil: License
+
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fyhino%2Fpipenv-poetry-migrate?ref=badge_large)
