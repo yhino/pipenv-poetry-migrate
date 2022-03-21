@@ -32,7 +32,7 @@ profile = "black"
 src_paths = ["pipenv_poetry_migrate", "tests"]
 
 [tool.mypy]
-ignore_missing_imports = True
+ignore_missing_imports = true
 
 [tool.semantic_release]
 branch = "master"
