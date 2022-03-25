@@ -2,7 +2,7 @@ import re
 import sys
 from typing import Any, Dict, Optional, Tuple, Union
 
-import rich
+import typer
 from tomlkit import aot, dumps, inline_table, nl, table
 from tomlkit.container import Container
 from tomlkit.items import InlineTable, Table, Trivia
@@ -104,10 +104,11 @@ class PipenvPoetryMigration(object):
     def _migrate_scripts(self):
         if "scripts" not in self._pipenv:
             return
-        rich.print(
-            "[yellow]!!WARNING!! poetry does not have the function of task runner."
+        typer.secho(
+            ">>>WARNING<<< poetry does not have the function of task runner."
             " migration of the scripts section will be skipped.",
-            file=sys.stderr,
+            err=True,
+            fg=typer.colors.YELLOW,
         )
 
     @staticmethod
