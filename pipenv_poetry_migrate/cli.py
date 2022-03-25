@@ -1,3 +1,4 @@
+from pathlib import Path
 from typing import Optional
 
 import typer
@@ -20,13 +21,13 @@ def show_version(is_show: bool):
 
 @app.command()
 def main(
-    pipfile: str = typer.Option(
+    pipfile: Path = typer.Option(
         ...,
         "--pipfile",
         "-f",
         help="path to Pipfile",
     ),
-    pyproject_toml: str = typer.Option(
+    pyproject_toml: Path = typer.Option(
         ...,
         "--pyproject-toml",
         "-t",

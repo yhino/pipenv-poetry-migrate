@@ -1,5 +1,5 @@
 import re
-import sys
+from pathlib import Path
 from typing import Any, Dict, Optional, Tuple, Union
 
 import typer
@@ -14,8 +14,8 @@ from pipenv_poetry_migrate.translator import translate_properties
 class PipenvPoetryMigration(object):
     def __init__(
         self,
-        pipfile: str,
-        pyproject_toml: str,
+        pipfile: Path,
+        pyproject_toml: Path,
         *,
         use_group_notation: bool = False,
         dry_run: bool = False
@@ -26,7 +26,7 @@ class PipenvPoetryMigration(object):
         self._use_group_notation = use_group_notation
         self._dry_run = dry_run
 
-    def pyproject_toml(self) -> str:
+    def pyproject_toml(self) -> Path:
         return self._pyproject_toml
 
     def migrate(self):
