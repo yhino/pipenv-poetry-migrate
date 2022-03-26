@@ -19,7 +19,7 @@ def show_version(is_show: bool):
         raise typer.Exit()
 
 
-@app.command()
+@app.command(context_settings=dict(help_option_names=["-h", "--help"]))
 def main(
     pipfile: Path = typer.Option(
         ...,
