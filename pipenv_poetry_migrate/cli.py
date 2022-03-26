@@ -1,7 +1,7 @@
-import sys
-from argparse import ArgumentParser
+from pathlib import Path
+from typing import Optional
 
-import rich
+import typer
 
 from pipenv_poetry_migrate import __version__
 from pipenv_poetry_migrate.loader import (
@@ -10,43 +10,65 @@ from pipenv_poetry_migrate.loader import (
 )
 from pipenv_poetry_migrate.migrate import PipenvPoetryMigration
 
+app = typer.Typer()
 
-def main():
-    parser = ArgumentParser()
-    parser.add_argument(
-        "-f", "--pipfile", type=str, required=True, help="path to Pipfile"
-    )
-    parser.add_argument(
-        "-t", "--pyproject-toml", type=str, required=True, help="path to pyproject.toml"
-    )
-    parser.add_argument(
+
+def show_version(is_show: bool):
+    if is_show:
+        typer.echo(f"{__version__}")
+        raise typer.Exit()
+
+
+@app.command(context_settings=dict(help_option_names=["-h", "--help"]))
+def main(
+    pipfile: Path = typer.Option(
+        ...,
+        "--pipfile",
+        "-f",
+        help="path to Pipfile",
+    ),
+    pyproject_toml: Path = typer.Option(
+        ...,
+        "--pyproject-toml",
+        "-t",
+        help="path to pyproject.toml",
+    ),
+    use_group_notation: bool = typer.Option(
+        False,
         "--use-group-notation",
         "--use-group",
         help="migrate development dependencies with the new group notation",
-        action="store_true",
-    )
-    parser.add_argument("-n", "--dry-run", help="dry-run", action="store_true")
-    parser.add_argument(
-        "-v", "--version", help="show version", action="version", version=__version__
-    )
-    args = parser.parse_args()
-
+    ),
+    dry_run: bool = typer.Option(
+        False,
+        "--dry-run",
+        "-n",
+        help="dry-run",
+    ),
+    _: Optional[bool] = typer.Option(
+        None,
+        "--version",
+        "-v",
+        help="show version",
+        callback=show_version,
+        is_eager=True,
+    ),
+):
+    """This is simple migration script, migrate pipenv to poetry"""
     try:
         PipenvPoetryMigration(
-            args.pipfile,
-            args.pyproject_toml,
-            use_group_notation=args.use_group_notation,
-            dry_run=args.dry_run,
+            pipfile,
+            pyproject_toml,
+            use_group_notation=use_group_notation,
+            dry_run=dry_run,
         ).migrate()
     except PipfileNotFoundError:
-        rich.print(f"[red]Pipfile '{args.pipfile}' not found", file=sys.stderr)
-        sys.exit(1)
+        typer.secho(f"Pipfile '{pipfile}' not found", err=True, fg=typer.colors.RED)
+        raise typer.Exit(code=1)
     except PyprojectTomlNotFoundError:
-        rich.print("[red]Please run `poetry init` first", file=sys.stderr)
-        sys.exit(1)
-    else:
-        sys.exit(0)
+        typer.secho("Please run `poetry init` first", err=True, fg=typer.colors.RED)
+        raise typer.Exit(code=1)
 
 
 if __name__ == "__main__":
-    main()
+    app()

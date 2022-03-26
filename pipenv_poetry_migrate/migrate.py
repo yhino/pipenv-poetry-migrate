@@ -1,8 +1,8 @@
 import re
-import sys
+from pathlib import Path
 from typing import Any, Dict, Optional, Tuple, Union
 
-import rich
+import typer
 from tomlkit import aot, dumps, inline_table, nl, table
 from tomlkit.container import Container
 from tomlkit.items import InlineTable, Table, Trivia
@@ -14,8 +14,8 @@ from pipenv_poetry_migrate.translator import translate_properties
 class PipenvPoetryMigration(object):
     def __init__(
         self,
-        pipfile: str,
-        pyproject_toml: str,
+        pipfile: Path,
+        pyproject_toml: Path,
         *,
         use_group_notation: bool = False,
         dry_run: bool = False
@@ -26,7 +26,7 @@ class PipenvPoetryMigration(object):
         self._use_group_notation = use_group_notation
         self._dry_run = dry_run
 
-    def pyproject_toml(self) -> str:
+    def pyproject_toml(self) -> Path:
         return self._pyproject_toml
 
     def migrate(self):
@@ -104,10 +104,11 @@ class PipenvPoetryMigration(object):
     def _migrate_scripts(self):
         if "scripts" not in self._pipenv:
             return
-        rich.print(
-            "[yellow]!!WARNING!! poetry does not have the function of task runner."
+        typer.secho(
+            ">>>WARNING<<< poetry does not have the function of task runner."
             " migration of the scripts section will be skipped.",
-            file=sys.stderr,
+            err=True,
+            fg=typer.colors.YELLOW,
         )
 
     @staticmethod

@@ -10,7 +10,7 @@ def test_migrate(
     pipenv_poetry_migration.migrate()
 
     actual = load_toml(pipenv_poetry_migration.pyproject_toml())
-    expect = load_toml(str(expect_pyproject_toml))
+    expect = load_toml(expect_pyproject_toml)
     assert actual == expect
 
 
@@ -21,5 +21,5 @@ def test_migrate_with_use_group_notation(
     pipenv_poetry_migration_with_use_group_notation.migrate()
 
     actual = load_toml(pipenv_poetry_migration_with_use_group_notation.pyproject_toml())
-    expect = load_toml(str(expect_pyproject_toml_with_use_group_notation))
+    expect = load_toml(expect_pyproject_toml_with_use_group_notation)
     assert actual == expect
