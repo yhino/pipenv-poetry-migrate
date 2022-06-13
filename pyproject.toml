@@ -35,7 +35,7 @@ src_paths = ["pipenv_poetry_migrate", "tests"]
 ignore_missing_imports = true
 
 [tool.semantic_release]
-branch = "master"
+branch = "main"
 version_toml = "pyproject.toml:tool.poetry.version"
 commit_parser = "semantic_release.history.emoji_parser"
 major_emoji = ":boom:"

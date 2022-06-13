@@ -13,7 +13,7 @@ name = "private"
 requests = "*"
 "uvicorn[standard]" = {version="*", index="pypi"}
 "celery[redis,msgpack]" = "*"
-pipenv-poetry-migrate = {editable=true, git="https://github.com/yhino/pipenv-poetry-migrate.git", ref="master"}
+pipenv-poetry-migrate = {editable=true, git="https://github.com/yhino/pipenv-poetry-migrate.git", ref="main"}
 "flask[dotenv,dev]" = {git = "https://github.com/pallets/flask.git", ref = "1.1.1"}
 
 [dev-packages]

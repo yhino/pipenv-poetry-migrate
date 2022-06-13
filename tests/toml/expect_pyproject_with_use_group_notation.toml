@@ -9,7 +9,7 @@ python = "^3.7"
 requests = "*"
 uvicorn = {extras = ["standard"], version="*", index="pypi"}
 celery = {extras = ["redis","msgpack"], version = "*"}
-pipenv-poetry-migrate = {git = "https://github.com/yhino/pipenv-poetry-migrate.git", rev = "master", develop = true}
+pipenv-poetry-migrate = {git = "https://github.com/yhino/pipenv-poetry-migrate.git", rev = "main", develop = true}
 flask = {git = "https://github.com/pallets/flask.git", rev = "1.1.1", extras = ["dotenv", "dev"]}
 
 [tool.poetry.group.dev.dependencies]
