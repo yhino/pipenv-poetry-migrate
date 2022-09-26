@@ -63,6 +63,9 @@ class PipenvPoetryMigration(object):
     def _migrate_dependencies(
         self, *, pipenv_key: str = "packages", poetry_key: str = "dependencies"
     ):
+        if poetry_key not in self._pyproject["tool"]["poetry"]:
+            self._pyproject["tool"]["poetry"].add(poetry_key, table())
+
         for name, properties in self._pipenv.get(pipenv_key, {}).items():
             name, extras = self._split_extras(name)
             if name in self._pyproject["tool"]["poetry"][poetry_key]:
@@ -94,7 +97,10 @@ class PipenvPoetryMigration(object):
             self._migrate_dependency_groups(pipenv_key="dev-packages", group_name="dev")
 
             # if there is no dependency, remove the traditional notation
-            if len(self._pyproject["tool"]["poetry"]["dev-dependencies"]) < 1:
+            if (
+                "dev-dependencies" in self._pyproject["tool"]["poetry"]
+                and len(self._pyproject["tool"]["poetry"]["dev-dependencies"]) < 1
+            ):
                 self._pyproject["tool"]["poetry"].remove("dev-dependencies")
         else:
             self._migrate_dependencies(
