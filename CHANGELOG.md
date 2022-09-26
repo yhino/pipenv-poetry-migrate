@@ -2,6 +2,20 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2022-09-26)
+### :bug:
+* :bug:  add exist check for `tool.poetry.dev-dependencies` ([#32](https://github.com/yhino/pipenv-poetry-migrate/issues/32)) ([`08d1da5`](https://github.com/yhino/pipenv-poetry-migrate/commit/08d1da5b12145187a5dd79aa81d4b407dbbba14a))
+
+### Other
+* :bookmark: 0.2.1  ([`7474fb0`](https://github.com/yhino/pipenv-poetry-migrate/commit/7474fb04ec7ac9c0c6cce8a11986260617308b6c))
+* :art:  change default branch to main ([#30](https://github.com/yhino/pipenv-poetry-migrate/issues/30)) ([`6aa0ecc`](https://github.com/yhino/pipenv-poetry-migrate/commit/6aa0eccfb6f36fa91f328c328cf5e06e5dc79d9c))
+* :construction_worker:  add snyk action ([`e8e323d`](https://github.com/yhino/pipenv-poetry-migrate/commit/e8e323d1cd732041931205f9a4d74ce133264290))
+* ♻️ migrate argument parser to typer ([#29](https://github.com/yhino/pipenv-poetry-migrate/issues/29)) ([`a3f8262`](https://github.com/yhino/pipenv-poetry-migrate/commit/a3f82629b1d1d037767b5cf7888b7be6f9018c64))
+* :construction_worker:  run the test in python 3.10 ([#28](https://github.com/yhino/pipenv-poetry-migrate/issues/28)) ([`ed273fa`](https://github.com/yhino/pipenv-poetry-migrate/commit/ed273fa24612f6926f98361efd8dbb7750886828))
+* :construction_worker:  update the poetry installer ([#27](https://github.com/yhino/pipenv-poetry-migrate/issues/27)) ([`3de3da2`](https://github.com/yhino/pipenv-poetry-migrate/commit/3de3da219a63dd9d8601ce82374fd53d236d5ab7))
+* :pencil:  clean up README and add about new options ([#26](https://github.com/yhino/pipenv-poetry-migrate/issues/26)) ([`75de4ef`](https://github.com/yhino/pipenv-poetry-migrate/commit/75de4ef125ffb236bb40142fcdf4461d21bf331d))
+* :construction_worker: configure codeql-analysis ([`22c953b`](https://github.com/yhino/pipenv-poetry-migrate/commit/22c953be6b17714cc52d9a1db6678bbcbaa5a041))
+
 ## v0.2.0 (2021-11-23)
 ### :sparkles:
 * :sparkles:  support dependency group notation (#24) empty commit for version up  ([`aa80e88`](https://github.com/yhino/pipenv-poetry-migrate/commit/aa80e8830ad58b900e0538c2be5fc1bbcc3701be))
