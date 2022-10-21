@@ -11,7 +11,7 @@ from pipenv_poetry_migrate.loader import load_pipfile, load_pyproject_toml
 from pipenv_poetry_migrate.translator import translate_properties
 
 
-class PipenvPoetryMigration(object):
+class PipenvPoetryMigration:
     def __init__(
         self,
         pipfile: Path,
