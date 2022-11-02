@@ -32,11 +32,11 @@ jobs:
 
     - name: Install dependencies
       run: |
-        poetry install
+        pip install tox
 
     - name: Run Tox
       run: |
-        poetry run tox -e black,flake8,mypy,py
+        tox -e black,flake8,mypy,py
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v2
