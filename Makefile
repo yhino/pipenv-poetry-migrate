@@ -34,6 +34,3 @@ test: clean
 		--cov-report=xml \
 		--cov-report=html \
 		tests
-
-tox:
-	@poetry run tox
