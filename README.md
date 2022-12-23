@@ -33,9 +33,11 @@ When want to run dry-run mode:
 
 Dry-run mode is `pyproject.toml` file does not overwrite, results are displayed on standard output.
 
-:seedling: Use the `--use-group-notation` option if you want to migrate to [the new notation supported in poetry 1.2](https://python-poetry.org/docs/master/managing-dependencies/#dependency-groups).
-
-    $ pipenv-poetry-migrate -f Pipfile -t pyproject.toml --use-group-notation
+> **Note**: 
+> The default behavior is to migrate with the [group notation](https://python-poetry.org/docs/master/managing-dependencies/#dependency-groups), which has been available since Poetry 1.2.0.
+> If you want to migrate with `dev-dependencies` notation, please use the `--on-use-group-notation` option.
+> 
+>     $ pipenv-poetry-migrate -f Pipfile -t pyproject.toml --no-use-group-notation
 
 #### Step 3: Generate lock file
 
