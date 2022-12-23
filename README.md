@@ -80,11 +80,11 @@ authors = ["Yoshiyuki HINO <yhinoz@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.7"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 ```
 
 By executing this script, pyproject.toml is rewritten as follows.
@@ -100,12 +100,12 @@ authors = ["Yoshiyuki HINO <yhinoz@gmail.com>"]
 python = "^3.7"
 requests = "*"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 pytest = "^5.2"
 
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 ```
 
 ## :handshake: Contributing
