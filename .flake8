@@ -8,3 +8,5 @@ extend-exclude =
     .pytest_cache
     build
     dist
+extend-immutable-calls =
+    typer.Option

@@ -34,9 +34,9 @@ def main(
         help="path to pyproject.toml",
     ),
     use_group_notation: bool = typer.Option(
-        False,
-        "--use-group-notation",
-        "--use-group",
+        True,
+        "--use-group-notation/--no-use-group-notation",
+        "--use-group/--no-use-group",
         help="migrate development dependencies with the new group notation",
     ),
     dry_run: bool = typer.Option(
