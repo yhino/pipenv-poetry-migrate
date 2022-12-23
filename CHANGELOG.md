@@ -2,6 +2,22 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2022-12-23)
+### :children_crossing:
+* :children_crossing: default migration to group notation ([#38](https://github.com/yhino/pipenv-poetry-migrate/issues/38)) ([`4019312`](https://github.com/yhino/pipenv-poetry-migrate/commit/40193126843b9da3bc965990d123c2c7f615521e))
+
+### :lock:
+* :lock: remove dep `py` ([#34](https://github.com/yhino/pipenv-poetry-migrate/issues/34)) ([`a85fb10`](https://github.com/yhino/pipenv-poetry-migrate/commit/a85fb102543ab10b578f1ea5394ec8b4e380c02b))
+
+### Other
+* :bookmark: 0.3.0  ([`4b65457`](https://github.com/yhino/pipenv-poetry-migrate/commit/4b65457cb76033f0e168106e56e1bd44714bb964))
+* :arrow_up: Bump certifi from 2021.5.30 to 2022.12.7 ([#36](https://github.com/yhino/pipenv-poetry-migrate/issues/36)) ([`813fb80`](https://github.com/yhino/pipenv-poetry-migrate/commit/813fb802ce7f9b3f0bb0d09996b531b9bdbb3e2a))
+* :green_heart: support tox 4.x ([#37](https://github.com/yhino/pipenv-poetry-migrate/issues/37)) ([`9cb808b`](https://github.com/yhino/pipenv-poetry-migrate/commit/9cb808b0be3778b22021022b63c1b39b39c4634f))
+* Use poetry-core ([#35](https://github.com/yhino/pipenv-poetry-migrate/issues/35)) ([`3bf8366`](https://github.com/yhino/pipenv-poetry-migrate/commit/3bf8366f01ef7c9c34e5e3efb467742c998e0599))
+* Update .deepsource.toml ([`396ac7e`](https://github.com/yhino/pipenv-poetry-migrate/commit/396ac7e9add80e3f897deace636dce7240459532))
+* Remove implicit `object` from the base class ([#33](https://github.com/yhino/pipenv-poetry-migrate/issues/33)) ([`b31bf0e`](https://github.com/yhino/pipenv-poetry-migrate/commit/b31bf0ef2fbcbb7f3e9e2873f0d06f9f28fd0476))
+* Add .deepsource.toml ([`95e9751`](https://github.com/yhino/pipenv-poetry-migrate/commit/95e9751971566056ef070fad54d53875178b4f16))
+
 ## v0.2.1 (2022-09-26)
 ### :bug:
 * :bug:  add exist check for `tool.poetry.dev-dependencies` ([#32](https://github.com/yhino/pipenv-poetry-migrate/issues/32)) ([`08d1da5`](https://github.com/yhino/pipenv-poetry-migrate/commit/08d1da5b12145187a5dd79aa81d4b407dbbba14a))
