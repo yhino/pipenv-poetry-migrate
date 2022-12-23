@@ -8,10 +8,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  analyze:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Check for High Serverity OSS Vulnerabilities
         uses: snyk/actions/python@master
         env:
