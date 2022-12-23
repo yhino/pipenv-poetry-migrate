@@ -1,4 +1,4 @@
-name: release
+name: Release
 
 on:
   push:
@@ -9,19 +9,18 @@ jobs:
     if: contains(github.event.head_commit.message, ':bookmark:')
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v3
       with:
         fetch-depth: 0
 
     - name: Set up Python 3.8
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: "3.8"
 
     - name: Install poetry
-      run: |
-        curl -sSL https://install.python-poetry.org | python -
-        echo "$HOME/.local/bin" >> $GITHUB_PATH
+      run: pipx install poetry
 
     - name: Semantic Release
       env:

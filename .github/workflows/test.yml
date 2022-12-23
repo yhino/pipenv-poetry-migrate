@@ -1,7 +1,4 @@
-# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-
-name: build
+name: Test
 
 on:
   push:
@@ -10,36 +7,33 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         python-version: ["3.7", "3.8", "3.9", "3.10"]
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
 
     - name: Install poetry
-      run: |
-        curl -sSL https://install.python-poetry.org | python -
-        echo "$HOME/.local/bin" >> $GITHUB_PATH
+      run: pipx install poetry
 
     - name: Install dependencies
-      run: |
-        pip install tox
+      run: pip install tox
 
     - name: Run Tox
-      run: |
-        tox -e black,flake8,mypy,py
+      run: tox -e black,flake8,mypy,py
 
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v2
+      uses: codecov/codecov-action@v3
       with:
         file: ./coverage.xml
         flags: unittests
