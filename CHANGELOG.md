@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.1 (2023-01-11)
+### Other
+* :bookmark: 0.3.1  ([`8684680`](https://github.com/yhino/pipenv-poetry-migrate/commit/86846807906c569dc32e2d0ca550c234e68aac2b))
+* :wrench: update semantic versioning rule  ([`ba2a03e`](https://github.com/yhino/pipenv-poetry-migrate/commit/ba2a03e4c363b16637bd123d37857621d3379ef6))
+* :construction_worker: do not run snyk action for Forked pull requests ([#43](https://github.com/yhino/pipenv-poetry-migrate/issues/43)) ([`88bcec5`](https://github.com/yhino/pipenv-poetry-migrate/commit/88bcec53a22edfc82eda00453950698a3fa29592))
+* Fix typo ([#42](https://github.com/yhino/pipenv-poetry-migrate/issues/42)) ([`803ce5d`](https://github.com/yhino/pipenv-poetry-migrate/commit/803ce5d68f0f8812f01797e55c2e9d4e3a067fdf))
+* Add Python 3.11 to the testing ([#41](https://github.com/yhino/pipenv-poetry-migrate/issues/41)) ([`8a332ef`](https://github.com/yhino/pipenv-poetry-migrate/commit/8a332efa6bc557e90df6cb76fd34317c1d5864a2))
+* :pencil: update the example to group notation ([#40](https://github.com/yhino/pipenv-poetry-migrate/issues/40)) ([`ecdb7fc`](https://github.com/yhino/pipenv-poetry-migrate/commit/ecdb7fc432ac64b345d0c7459b192aa9f2416628))
+* :construction_worker: upgrade version of the actions ([#39](https://github.com/yhino/pipenv-poetry-migrate/issues/39)) ([`a9e4f38`](https://github.com/yhino/pipenv-poetry-migrate/commit/a9e4f382e65fc145327e67da1587c124d5496940))
+
 ## v0.3.0 (2022-12-23)
 ### :children_crossing:
 * :children_crossing: default migration to group notation ([#38](https://github.com/yhino/pipenv-poetry-migrate/issues/38)) ([`4019312`](https://github.com/yhino/pipenv-poetry-migrate/commit/40193126843b9da3bc965990d123c2c7f615521e))
