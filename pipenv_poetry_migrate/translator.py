@@ -1,6 +1,7 @@
 translate_property_map = {
     "editable": "develop",
     "ref": "rev",
+    "index": "source",
 }
 
 
