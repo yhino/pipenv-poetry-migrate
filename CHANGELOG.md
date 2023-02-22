@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.2 (2023-02-22)
+### :bug:
+* :bug: fix PyPI attribute ([#49](https://github.com/yhino/pipenv-poetry-migrate/issues/49)) ([`383ba73`](https://github.com/yhino/pipenv-poetry-migrate/commit/383ba73e77ab7201f97dfc3ed0ddaeae215444cc))
+
+### Other
+* :bookmark: 0.3.2 ([`e4ef6ba`](https://github.com/yhino/pipenv-poetry-migrate/commit/e4ef6ba24fbf0d99082b1ec03f4009cf681fc140))
+
 ## v0.3.1 (2023-01-11)
 ### Other
 * :bookmark: 0.3.1  ([`8684680`](https://github.com/yhino/pipenv-poetry-migrate/commit/86846807906c569dc32e2d0ca550c234e68aac2b))
