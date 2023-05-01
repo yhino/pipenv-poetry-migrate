@@ -62,12 +62,12 @@ def main(
             use_group_notation=use_group_notation,
             dry_run=dry_run,
         ).migrate()
-    except PipfileNotFoundError:
+    except PipfileNotFoundError as exc:
         typer.secho(f"Pipfile '{pipfile}' not found", err=True, fg=typer.colors.RED)
-        raise typer.Exit(code=1)
-    except PyprojectTomlNotFoundError:
+        raise typer.Exit(code=1) from exc
+    except PyprojectTomlNotFoundError as exc:
         typer.secho("Please run `poetry init` first", err=True, fg=typer.colors.RED)
-        raise typer.Exit(code=1)
+        raise typer.Exit(code=1) from exc
 
 
 if __name__ == "__main__":
