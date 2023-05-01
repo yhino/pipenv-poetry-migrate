@@ -31,10 +31,10 @@ class PipenvPoetryMigration:
         return self._pyproject_toml
 
     def migrate(self):
-        self._migrate_source()
         self._migrate_dependencies()
         self._migrate_dev_dependencies()
         self._migrate_scripts()
+        self._migrate_source()
         self._save()
 
     def _save(self):
@@ -43,20 +43,6 @@ class PipenvPoetryMigration:
         else:
             with open(self._pyproject_toml, "w") as f:
                 f.write(dumps(self._pyproject))
-
-    def _migrate_source(self):
-        for s in self._pipenv.get("source", aot()):
-            if s["name"] == "pypi":
-                continue
-
-            source = table()
-            source.add("name", s["name"])
-            source.add("url", s["url"])
-            source.add(nl())
-
-            if "source" not in self._poetry:
-                self._poetry["source"] = aot()
-            self._poetry["source"].append(source)
 
     def _migrate_dependencies(
         self, *, pipenv_key: str = "packages", poetry_key: str = "dependencies"
@@ -86,6 +72,7 @@ class PipenvPoetryMigration:
                 continue
             properties = self._reformat_dependency_properties(extras, properties)
             group["dependencies"].add(name, properties)
+        group.add(nl())
 
     def _migrate_dev_dependencies(self):
         if self._use_group_notation:
@@ -111,6 +98,20 @@ class PipenvPoetryMigration:
             err=True,
             fg=typer.colors.YELLOW,
         )
+
+    def _migrate_source(self):
+        for s in self._pipenv.get("source", aot()):
+            if s["name"] == "pypi":
+                continue
+
+            source = table()
+            source.add("name", s["name"])
+            source.add("url", s["url"])
+            source.add(nl())
+
+            if "source" not in self._poetry:
+                self._poetry["source"] = aot()
+            self._poetry["source"].append(source)
 
     @staticmethod
     def _split_extras(name: str) -> Tuple[str, Optional[str]]:
