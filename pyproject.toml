@@ -22,6 +22,7 @@ flake8 = "^6.0.0"
 mypy = "^1.2.0"
 python-semantic-release = "^7.15.3"
 types-setuptools = "^57.0.0"
+tryceratops = "^2.0.0"
 
 [tool.poetry.scripts]
 pipenv-poetry-migrate = "pipenv_poetry_migrate.cli:app"
