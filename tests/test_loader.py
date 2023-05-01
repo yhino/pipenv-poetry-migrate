@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import pytest
+from tomlkit import table
 from tomlkit.exceptions import ParseError
 from tomlkit.toml_document import TOMLDocument
 
@@ -17,7 +18,10 @@ def test_load_toml(pyproject_toml: Path):
     toml = load_toml(pyproject_toml)
 
     assert isinstance(toml, TOMLDocument)
-    assert toml["tool"]["poetry"]["name"] == "pipenv-poetry-migrate-tests"
+    assert (
+        toml.get("tool", table(is_super_table=True)).get("poetry", table()).get("name")
+        == "pipenv-poetry-migrate-tests"
+    )
 
 
 def test_load_toml_file_not_found():

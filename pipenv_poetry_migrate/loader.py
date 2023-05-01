@@ -20,12 +20,12 @@ def load_toml(filepath: Path) -> TOMLDocument:
 def load_pipfile(filepath: Path) -> TOMLDocument:
     try:
         return load_toml(filepath)
-    except FileNotFoundError as e:
-        raise PipfileNotFoundError from e
+    except FileNotFoundError as exc:
+        raise PipfileNotFoundError from exc
 
 
 def load_pyproject_toml(filepath: Path) -> TOMLDocument:
     try:
         return load_toml(filepath)
-    except FileNotFoundError as e:
-        raise PyprojectTomlNotFoundError from e
+    except FileNotFoundError as exc:
+        raise PyprojectTomlNotFoundError from exc
