@@ -1,6 +1,10 @@
 from pathlib import Path
 
 import pytest
+from tomlkit import table
+from tomlkit.exceptions import ParseError
+from tomlkit.toml_document import TOMLDocument
+
 from pipenv_poetry_migrate.loader import (
     PipfileNotFoundError,
     PyprojectTomlNotFoundError,
@@ -8,9 +12,6 @@ from pipenv_poetry_migrate.loader import (
     load_pyproject_toml,
     load_toml,
 )
-from tomlkit import table
-from tomlkit.exceptions import ParseError
-from tomlkit.toml_document import TOMLDocument
 
 
 def test_load_toml(pyproject_toml: Path) -> None:

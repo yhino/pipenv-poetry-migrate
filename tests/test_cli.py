@@ -1,8 +1,9 @@
 from pathlib import Path
 
+from typer.testing import CliRunner
+
 from pipenv_poetry_migrate import __version__
 from pipenv_poetry_migrate.cli import app
-from typer.testing import CliRunner
 
 runner = CliRunner(mix_stderr=False)
 

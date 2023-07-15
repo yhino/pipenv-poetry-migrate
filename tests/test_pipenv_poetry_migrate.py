@@ -1,8 +1,9 @@
 from pathlib import Path
 
 import tomlkit
-from pipenv_poetry_migrate import __version__
 from tomlkit import table
+
+from pipenv_poetry_migrate import __version__
 
 
 def test_version() -> None:
