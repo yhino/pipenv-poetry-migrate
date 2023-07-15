@@ -1,3 +1,5 @@
+from typing import Any, Dict
+
 translate_property_map = {
     "editable": "develop",
     "ref": "rev",
@@ -5,7 +7,7 @@ translate_property_map = {
 }
 
 
-def translate_properties(properties: dict) -> dict:
+def translate_properties(properties: Dict[str, Any]) -> Dict[str, Any]:
     key_list = list(properties.keys())
     for k in key_list:
         if k in translate_property_map:

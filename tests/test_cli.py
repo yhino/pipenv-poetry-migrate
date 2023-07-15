@@ -1,14 +1,13 @@
 from pathlib import Path
 
-from typer.testing import CliRunner
-
 from pipenv_poetry_migrate import __version__
 from pipenv_poetry_migrate.cli import app
+from typer.testing import CliRunner
 
 runner = CliRunner(mix_stderr=False)
 
 
-def test_main(pipfile: Path, pyproject_toml: Path):
+def test_main(pipfile: Path, pyproject_toml: Path) -> None:
     argv = ["-f", str(pipfile), "-t", str(pyproject_toml), "-n"]
     result = runner.invoke(app, argv)
 
@@ -16,7 +15,7 @@ def test_main(pipfile: Path, pyproject_toml: Path):
     assert result.stdout != ""
 
 
-def test_main_show_version():
+def test_main_show_version() -> None:
     argv = ["-v"]
     result = runner.invoke(app, argv)
 
@@ -25,7 +24,7 @@ def test_main_show_version():
     assert result.stderr == ""
 
 
-def test_main_raise_pipfile_not_found_error(pyproject_toml: Path):
+def test_main_raise_pipfile_not_found_error(pyproject_toml: Path) -> None:
     argv = ["-f", "not_found.toml", "-t", str(pyproject_toml), "-n"]
     result = runner.invoke(app, argv)
 
@@ -34,7 +33,7 @@ def test_main_raise_pipfile_not_found_error(pyproject_toml: Path):
     assert "Pipfile 'not_found.toml' not found" in result.stderr
 
 
-def test_main_raise_pyproject_toml_not_found_error(pipfile: Path):
+def test_main_raise_pyproject_toml_not_found_error(pipfile: Path) -> None:
     argv = ["-f", str(pipfile), "-t", "not_found.toml", "-n"]
     result = runner.invoke(app, argv)
 

@@ -13,13 +13,17 @@ from pipenv_poetry_migrate.migrate import PipenvPoetryMigration
 app = typer.Typer()
 
 
-def show_version(is_show: bool):
+def show_version(is_show: bool) -> None:
     if is_show:
         typer.echo(f"{__version__}")
-        raise typer.Exit()
+        raise typer.Exit
 
 
-@app.command(context_settings=dict(help_option_names=["-h", "--help"]))
+@app.command(
+    context_settings={
+        "help_option_names": ["-h", "--help"],
+    },
+)
 def main(
     pipfile: Path = typer.Option(
         ...,
@@ -53,8 +57,8 @@ def main(
         callback=show_version,
         is_eager=True,
     ),
-):
-    """This is simple migration script, migrate pipenv to poetry"""
+) -> None:
+    """Migrate pipenv to poetry."""
     try:
         PipenvPoetryMigration(
             pipfile,
