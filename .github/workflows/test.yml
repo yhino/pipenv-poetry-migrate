@@ -30,7 +30,7 @@ jobs:
       run: pip install tox
 
     - name: Run Tox
-      run: tox -e black,flake8,mypy,py
+      run: tox -e lint,py
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3

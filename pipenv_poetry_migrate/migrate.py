@@ -17,8 +17,8 @@ class PipenvPoetryMigration:
         pyproject_toml: Path,
         *,
         use_group_notation: bool = False,
-        dry_run: bool = False
-    ):
+        dry_run: bool = False,
+    ) -> None:
         self._pipenv = load_pipfile(pipfile)
         self._pyproject = load_pyproject_toml(pyproject_toml)
         self._pyproject_tool = self._pyproject.get("tool", table(is_super_table=True))
@@ -30,66 +30,77 @@ class PipenvPoetryMigration:
     def pyproject_toml(self) -> Path:
         return self._pyproject_toml
 
-    def migrate(self):
+    def migrate(self) -> None:
         self._migrate_dependencies()
         self._migrate_dev_dependencies()
         self._migrate_scripts()
         self._migrate_source()
         self._save()
 
-    def _save(self):
+    def _save(self) -> None:
         if self._dry_run:
-            print(dumps(self._pyproject))
+            typer.echo(dumps(self._pyproject))
         else:
-            with open(self._pyproject_toml, "w") as f:
+            with Path(self._pyproject_toml).open("w") as f:
                 f.write(dumps(self._pyproject))
 
     def _migrate_dependencies(
-        self, *, pipenv_key: str = "packages", poetry_key: str = "dependencies"
-    ):
+        self,
+        *,
+        pipenv_key: str = "packages",
+        poetry_key: str = "dependencies",
+    ) -> None:
         if poetry_key not in self._poetry:
             self._poetry.add(poetry_key, table())
 
-        for name, properties in self._pipenv.get(pipenv_key, {}).items():
-            name, extras = self._split_extras(name)
+        for raw_name, properties in self._pipenv.get(pipenv_key, {}).items():
+            name, extras = self._split_extras(raw_name)
             if name in self._poetry[poetry_key]:
                 continue
-            properties = self._reformat_dependency_properties(extras, properties)
-            self._poetry[poetry_key].add(name, properties)
+            formatted_properties = self._reformat_dependency_properties(
+                extras,
+                properties,
+            )
+            self._poetry[poetry_key].add(name, formatted_properties)
 
-    def _migrate_dependency_groups(self, pipenv_key: str, group_name: str):
+    def _migrate_dependency_groups(self, pipenv_key: str, group_name: str) -> None:
         if "group" not in self._poetry:
             self._poetry["group"] = table(is_super_table=True)
         if group_name not in self._poetry["group"]:
             self._poetry["group"][group_name] = table(is_super_table=True).add(
-                "dependencies", table()
+                "dependencies",
+                table(),
             )
 
         group = self._poetry["group"][group_name]
-        for name, properties in self._pipenv.get(pipenv_key, {}).items():
-            name, extras = self._split_extras(name)
+        for raw_name, properties in self._pipenv.get(pipenv_key, {}).items():
+            name, extras = self._split_extras(raw_name)
             if name in group["dependencies"]:
                 continue
-            properties = self._reformat_dependency_properties(extras, properties)
-            group["dependencies"].add(name, properties)
+            formatted_properties = self._reformat_dependency_properties(
+                extras,
+                properties,
+            )
+            group["dependencies"].add(name, formatted_properties)
         group.add(nl())
 
-    def _migrate_dev_dependencies(self):
+    def _migrate_dev_dependencies(self) -> None:
         if self._use_group_notation:
             self._migrate_dependency_groups(pipenv_key="dev-packages", group_name="dev")
 
             # if there is no dependency, remove the traditional notation
             if (
-                "dev-dependencies" in self._pyproject["tool"]["poetry"]
+                "dev-dependencies" in self._poetry
                 and len(self._poetry["dev-dependencies"]) < 1
             ):
                 self._poetry.remove("dev-dependencies")
         else:
             self._migrate_dependencies(
-                pipenv_key="dev-packages", poetry_key="dev-dependencies"
+                pipenv_key="dev-packages",
+                poetry_key="dev-dependencies",
             )
 
-    def _migrate_scripts(self):
+    def _migrate_scripts(self) -> None:
         if "scripts" not in self._pipenv:
             return
         typer.secho(
@@ -99,7 +110,7 @@ class PipenvPoetryMigration:
             fg=typer.colors.YELLOW,
         )
 
-    def _migrate_source(self):
+    def _migrate_source(self) -> None:
         for s in self._pipenv.get("source", aot()):
             if s["name"] == "pypi":
                 continue
@@ -127,7 +138,8 @@ class PipenvPoetryMigration:
 
     @staticmethod
     def _reformat_dependency_properties(
-        extras: Optional[str], properties: Union[str, Dict[str, Any]]
+        extras: Optional[str],
+        properties: Union[str, Dict[str, Any]],
     ) -> Union[Item, InlineTable]:
         formatted = inline_table()
         if extras is not None:
@@ -138,6 +150,6 @@ class PipenvPoetryMigration:
             formatted.append("version", properties)
         return (
             formatted["version"]
-            if len(formatted) == 1 and "version" in formatted.keys()
+            if len(formatted) == 1 and "version" in formatted
             else formatted
         )
