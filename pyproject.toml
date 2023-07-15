@@ -16,22 +16,41 @@ typer = "^0.7.0"
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.1.1"
 pytest-cov = "^3.0.0"
-black = "^23.3.0"
-isort = {extras = ["pyproject"], version = "^5.12.0"}
-flake8 = "^6.0.0"
-mypy = "^1.2.0"
+black = "^23.7.0"
+mypy = "^1.4.1"
 python-semantic-release = "^7.15.3"
 types-setuptools = "^57.0.0"
-tryceratops = "^2.0.0"
+ruff = "^0.0.272"
 
 [tool.poetry.scripts]
 pipenv-poetry-migrate = "pipenv_poetry_migrate.cli:app"
 
 [tool.isort]
+py_version = 38
 profile = "black"
 src_paths = ["pipenv_poetry_migrate", "tests"]
 
+[tool.ruff]
+target-version = "py38"
+select = ["ALL"]
+ignore = [
+    "D",        # temporary
+    "ANN",      # handled by mypy
+    "E501",     # line too long, handled by black
+    "B008",     # do not perform function calls in argument defaults
+]
+src = ["pipenv_poetry_migrate", "tests"]
+
+[tool.ruff.per-file-ignores]
+"pipenv_poetry_migrate/cli.py" = ["FBT"]
+"tests/*" = ["D", "S", "PLC1901"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
 [tool.mypy]
+python_version = 3.8
+strict = true
 ignore_missing_imports = true
 
 [tool.semantic_release]
