@@ -2,6 +2,33 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.0 (2023-08-09)
+
+### :bug:
+
+* :bug: rollback python-semantic-release config and fix version ([`7123366`](https://github.com/yhino/pipenv-poetry-migrate/commit/712336666223c083f7dab9b644d27f5ea298ee13))
+* :bug: fix python-semantic-release config ([`ba05a92`](https://github.com/yhino/pipenv-poetry-migrate/commit/ba05a9231c70bcbafaf533a594d87857095d710e))
+
+### :arrow_up:
+
+* :arrow_up: update certifi,criptography ([#59](https://github.com/yhino/pipenv-poetry-migrate/issues/59)) ([`b62142b`](https://github.com/yhino/pipenv-poetry-migrate/commit/b62142b77f0191d69698b8e0757b931a9b7964ca))
+* :arrow_up: Bump cryptography from 40.0.2 to 41.0.2 ([#55](https://github.com/yhino/pipenv-poetry-migrate/issues/55)) ([`18de64c`](https://github.com/yhino/pipenv-poetry-migrate/commit/18de64c72d003a0937078885276c10766b751a84))
+* :arrow_up: Bump requests from 2.29.0 to 2.31.0 ([#53](https://github.com/yhino/pipenv-poetry-migrate/issues/53)) ([`0912d33`](https://github.com/yhino/pipenv-poetry-migrate/commit/0912d334baa0f92d3546052f0bb649105e742415))
+
+### :children_crossing:
+
+* :children_crossing: reordering pyproject keys ([#51](https://github.com/yhino/pipenv-poetry-migrate/issues/51)) ([`c14c929`](https://github.com/yhino/pipenv-poetry-migrate/commit/c14c929b4af475bc6f6401b4475bee273e007f02))
+
+### Other
+
+* :bookmark: 0.4.0 ([`1c6f452`](https://github.com/yhino/pipenv-poetry-migrate/commit/1c6f452610c7c26b758189cf90b59bc001651300))
+* :bookmark: 0.4.0 ([`a66046f`](https://github.com/yhino/pipenv-poetry-migrate/commit/a66046f7ff2c93dee48bd14de02f6d7120d62f6e))
+* :bookmark: 0.4.0 ([`5e33b5f`](https://github.com/yhino/pipenv-poetry-migrate/commit/5e33b5f0c10b71c93624504c6d30be705a5c410e))
+* Upgrade deps ([#57](https://github.com/yhino/pipenv-poetry-migrate/issues/57)) ([`dd43834`](https://github.com/yhino/pipenv-poetry-migrate/commit/dd4383410f53e712cf6a5a8392be7f6db7185c77))
+* Use Ruff and stop using flake8 ([#56](https://github.com/yhino/pipenv-poetry-migrate/issues/56)) ([`c6572ec`](https://github.com/yhino/pipenv-poetry-migrate/commit/c6572ecde4def0b0f53171b60c9951c755ee4f5d))
+* :heavy_plus_sign: add linter `tryceratops` ([#52](https://github.com/yhino/pipenv-poetry-migrate/issues/52)) ([`709b7cd`](https://github.com/yhino/pipenv-poetry-migrate/commit/709b7cd1d3b9226c57a0a0528cd90f5e04411a7d))
+* Python 3.7 EOL ([#50](https://github.com/yhino/pipenv-poetry-migrate/issues/50)) ([`edc7288`](https://github.com/yhino/pipenv-poetry-migrate/commit/edc728850e008e2030cd877f92f5f687ab7e705e))
+
 ## v0.3.2 (2023-02-22)
 ### :bug:
 * :bug: fix PyPI attribute ([#49](https://github.com/yhino/pipenv-poetry-migrate/issues/49)) ([`383ba73`](https://github.com/yhino/pipenv-poetry-migrate/commit/383ba73e77ab7201f97dfc3ed0ddaeae215444cc))
