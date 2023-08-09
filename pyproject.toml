@@ -55,7 +55,9 @@ ignore_missing_imports = true
 
 [tool.semantic_release]
 branch = "main"
-version_toml = "pyproject.toml:tool.poetry.version"
+version_toml = [
+    "pyproject.toml:tool.poetry.version"
+]
 commit_parser = "semantic_release.history.emoji_parser"
 major_emoji = ":boom:"
 minor_emoji = ":sparkles:,:children_crossing:,:lipstick:,:iphone:,:egg:,:chart_with_upwards_trend:"
