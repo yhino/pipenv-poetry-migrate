@@ -33,7 +33,7 @@ When want to run dry-run mode:
 
 Dry-run mode is `pyproject.toml` file does not overwrite, results are displayed on standard output.
 
-> **Note**: 
+> **Note**  
 > The default behavior is to migrate with the [group notation](https://python-poetry.org/docs/master/managing-dependencies/#dependency-groups), which has been available since Poetry 1.2.0.
 > If you want to migrate with `dev-dependencies` notation, please use the `--on-use-group-notation` option.
 > 
