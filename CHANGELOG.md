@@ -2,6 +2,23 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.0 (2023-09-10)
+
+### :sparkles:
+
+* :sparkles: add `--re-migrate` option ([#64](https://github.com/yhino/pipenv-poetry-migrate/issues/64)) ([`d930250`](https://github.com/yhino/pipenv-poetry-migrate/commit/d93025042a895aa0be9fd0db9a569c8c91fba08a))
+
+### :arrow_up:
+
+* :arrow_up: Bump gitpython from 3.1.34 to 3.1.35 ([#63](https://github.com/yhino/pipenv-poetry-migrate/issues/63)) ([`797db7c`](https://github.com/yhino/pipenv-poetry-migrate/commit/797db7c4695165ef65676ab1b9c3f6e9640a95b9))
+* :arrow_up: Bump gitpython from 3.1.32 to 3.1.34 ([#61](https://github.com/yhino/pipenv-poetry-migrate/issues/61)) ([`ee65b96`](https://github.com/yhino/pipenv-poetry-migrate/commit/ee65b96f6940adcfce2663a11957c04a520fd81f))
+
+### Other
+
+* :bookmark: 0.5.0 ([`c49a207`](https://github.com/yhino/pipenv-poetry-migrate/commit/c49a207ec78274b07f710087bb766a789bb909a1))
+* Fix Note syntax ([`fedfd44`](https://github.com/yhino/pipenv-poetry-migrate/commit/fedfd44ae2af82a3ccf659fba1f3e3eee5bb8f8d))
+* :construction_worker: fix codecov config ([`aa40e36`](https://github.com/yhino/pipenv-poetry-migrate/commit/aa40e3699f93211b74f619b865ba9d1eeaf3553a))
+
 ## v0.4.0 (2023-08-09)
 
 ### :bug:
