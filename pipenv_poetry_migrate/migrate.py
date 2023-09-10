@@ -1,4 +1,5 @@
 import re
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple, Union
 
@@ -10,22 +11,27 @@ from pipenv_poetry_migrate.loader import load_pipfile, load_pyproject_toml
 from pipenv_poetry_migrate.translator import translate_properties
 
 
+@dataclass
+class MigrationOption:
+    use_group_notation: bool = True
+    re_migrate: bool = False
+    dry_run: bool = False
+
+
 class PipenvPoetryMigration:
     def __init__(
         self,
         pipfile: Path,
         pyproject_toml: Path,
         *,
-        use_group_notation: bool = False,
-        dry_run: bool = False,
+        option: MigrationOption,
     ) -> None:
         self._pipenv = load_pipfile(pipfile)
         self._pyproject = load_pyproject_toml(pyproject_toml)
         self._pyproject_tool = self._pyproject.get("tool", table(is_super_table=True))
         self._poetry = self._pyproject_tool.get("poetry", table())
         self._pyproject_toml = pyproject_toml
-        self._use_group_notation = use_group_notation
-        self._dry_run = dry_run
+        self._option = option
 
     def pyproject_toml(self) -> Path:
         return self._pyproject_toml
@@ -38,7 +44,7 @@ class PipenvPoetryMigration:
         self._save()
 
     def _save(self) -> None:
-        if self._dry_run:
+        if self._option.dry_run:
             typer.echo(dumps(self._pyproject))
         else:
             with Path(self._pyproject_toml).open("w") as f:
@@ -55,13 +61,16 @@ class PipenvPoetryMigration:
 
         for raw_name, properties in self._pipenv.get(pipenv_key, {}).items():
             name, extras = self._split_extras(raw_name)
-            if name in self._poetry[poetry_key]:
-                continue
             formatted_properties = self._reformat_dependency_properties(
                 extras,
                 properties,
             )
-            self._poetry[poetry_key].add(name, formatted_properties)
+            if name in self._poetry[poetry_key]:
+                if not self._option.re_migrate:
+                    continue
+                self._poetry[poetry_key][name] = formatted_properties
+            else:
+                self._poetry[poetry_key].add(name, formatted_properties)
 
     def _migrate_dependency_groups(self, pipenv_key: str, group_name: str) -> None:
         if "group" not in self._poetry:
@@ -75,17 +84,20 @@ class PipenvPoetryMigration:
         group = self._poetry["group"][group_name]
         for raw_name, properties in self._pipenv.get(pipenv_key, {}).items():
             name, extras = self._split_extras(raw_name)
-            if name in group["dependencies"]:
-                continue
             formatted_properties = self._reformat_dependency_properties(
                 extras,
                 properties,
             )
-            group["dependencies"].add(name, formatted_properties)
+            if name in group["dependencies"]:
+                if not self._option.re_migrate:
+                    continue
+                group["dependencies"][name] = formatted_properties
+            else:
+                group["dependencies"].add(name, formatted_properties)
         group.add(nl())
 
     def _migrate_dev_dependencies(self) -> None:
-        if self._use_group_notation:
+        if self._option.use_group_notation:
             self._migrate_dependency_groups(pipenv_key="dev-packages", group_name="dev")
 
             # if there is no dependency, remove the traditional notation
