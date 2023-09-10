@@ -11,6 +11,7 @@ uvicorn = {extras = ["standard"], version="*", source="pypi"}
 celery = {extras = ["redis","msgpack"], version = "*"}
 pipenv-poetry-migrate = {git = "https://github.com/yhino/pipenv-poetry-migrate.git", rev = "main", develop = true}
 flask = {git = "https://github.com/pallets/flask.git", rev = "1.1.1", extras = ["dotenv", "dev"]}
+numpy = "^1.25.2"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^5.2"

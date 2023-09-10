@@ -19,10 +19,15 @@ def poetry12_pyproject_toml() -> Path:
 
 
 @pytest.fixture()
-def expect_pyproject_toml() -> Path:
-    return Path("tests/toml/expect_pyproject.toml")
+def expect_pyproject_toml_with_default_option() -> Path:
+    return Path("tests/toml/expect_pyproject_with_default_option.toml")
 
 
 @pytest.fixture()
-def expect_pyproject_toml_with_use_group_notation() -> Path:
-    return Path("tests/toml/expect_pyproject_with_use_group_notation.toml")
+def expect_pyproject_toml_with_no_use_group_notation() -> Path:
+    return Path("tests/toml/expect_pyproject_with_no_use_group_notation.toml")
+
+
+@pytest.fixture()
+def expect_pyproject_toml_with_re_migrate() -> Path:
+    return Path("tests/toml/expect_pyproject_with_re_migrate.toml")
