@@ -2,6 +2,19 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.1 (2023-10-24)
+
+### :arrow_up:
+
+* :arrow_up: Bump urllib3 from 2.0.6 to 2.0.7 ([#68](https://github.com/yhino/pipenv-poetry-migrate/issues/68)) ([`c745770`](https://github.com/yhino/pipenv-poetry-migrate/commit/c7457700677dcc7c6690cb1e4e91069309c608ce))
+* :arrow_up: Bump gitpython from 3.1.35 to 3.1.37 ([#67](https://github.com/yhino/pipenv-poetry-migrate/issues/67)) ([`68351c0`](https://github.com/yhino/pipenv-poetry-migrate/commit/68351c0502e389a1b15da74b31c3c75ab474c982))
+* :arrow_up: Bump urllib3 from 2.0.3 to 2.0.6 ([#66](https://github.com/yhino/pipenv-poetry-migrate/issues/66)) ([`00f523c`](https://github.com/yhino/pipenv-poetry-migrate/commit/00f523c9eaf35b5e07bbb716f49aba144a6d5c30))
+* :arrow_up: Bump cryptography from 41.0.3 to 41.0.4 ([#65](https://github.com/yhino/pipenv-poetry-migrate/issues/65)) ([`28b55cd`](https://github.com/yhino/pipenv-poetry-migrate/commit/28b55cd6ad28a60f43dff27923150c9e51d01701))
+
+### Other
+
+* :bookmark: 0.5.1 ([`fe2a996`](https://github.com/yhino/pipenv-poetry-migrate/commit/fe2a996d2729ad0b6baae660cd0f556f62fe50c1))
+
 ## v0.5.0 (2023-09-10)
 
 ### :sparkles:
