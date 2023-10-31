@@ -10,17 +10,17 @@ readme = 'README.md'
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0"
-tomlkit = "^0.11.8"
+tomlkit = "^0.12.1"
 typer = "^0.9.0"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.4.0"
+pytest = "^7.4.3"
 pytest-cov = "^4.1.0"
-black = "^23.7.0"
-mypy = "^1.4.1"
+black = "^23.10.1"
+mypy = "^1.6.1"
 python-semantic-release = "^7.15.3"
-types-setuptools = "^68.0.0.1"
-ruff = "^0.0.272"
+types-setuptools = "^68.2.0.0"
+ruff = "^0.1.3"
 
 [tool.poetry.scripts]
 pipenv-poetry-migrate = "pipenv_poetry_migrate.cli:app"
