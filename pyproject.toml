@@ -34,7 +34,7 @@ src_paths = ["pipenv_poetry_migrate", "tests"]
 target-version = "py38"
 select = ["ALL"]
 ignore = [
-    "D",        # temporary
+    "D",        # disabled temporary
     "ANN",      # handled by mypy
     "E501",     # line too long, handled by black
     "B008",     # do not perform function calls in argument defaults
@@ -42,8 +42,15 @@ ignore = [
 src = ["pipenv_poetry_migrate", "tests"]
 
 [tool.ruff.per-file-ignores]
-"pipenv_poetry_migrate/cli.py" = ["FBT"]
-"tests/*" = ["D", "S", "PLC1901"]
+"pipenv_poetry_migrate/cli.py" = [
+    "FBT",      # imcompatible with typer
+    "FA100",    # https://github.com/tiangolo/typer/issues/348
+]
+"tests/*" = [
+    "D",        # disabled temporary
+    "S101",     # use assert in tests
+    "PLC1901",  # empty strings are falsey, but are less specific in tests
+]
 
 [tool.ruff.pydocstyle]
 convention = "google"
