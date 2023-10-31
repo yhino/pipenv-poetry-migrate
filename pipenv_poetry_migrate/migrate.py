@@ -1,11 +1,15 @@
+from __future__ import annotations
+
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, Optional, Tuple, Union
+from typing import TYPE_CHECKING, Any
 
 import typer
 from tomlkit import aot, dumps, inline_table, nl, table
-from tomlkit.items import InlineTable, Item
+
+if TYPE_CHECKING:
+    from tomlkit.items import InlineTable, Item
 
 from pipenv_poetry_migrate.loader import load_pipfile, load_pyproject_toml
 from pipenv_poetry_migrate.translator import translate_properties
@@ -137,7 +141,7 @@ class PipenvPoetryMigration:
             self._poetry["source"].append(source)
 
     @staticmethod
-    def _split_extras(name: str) -> Tuple[str, Optional[str]]:
+    def _split_extras(name: str) -> tuple[str, str | None]:
         m = re.match(r"^(.+)\[([^\]]+)\]$", name)
         extras = None
         if m:
@@ -150,9 +154,9 @@ class PipenvPoetryMigration:
 
     @staticmethod
     def _reformat_dependency_properties(
-        extras: Optional[str],
-        properties: Union[str, Dict[str, Any]],
-    ) -> Union[Item, InlineTable]:
+        extras: str | None,
+        properties: str | dict[str, Any],
+    ) -> Item | InlineTable:
         formatted = inline_table()
         if extras is not None:
             formatted.update({"extras": extras.split(",")})

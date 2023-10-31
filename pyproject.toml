@@ -10,17 +10,17 @@ readme = 'README.md'
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0"
-tomlkit = "^0.11.8"
+tomlkit = "^0.12.1"
 typer = "^0.9.0"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.4.0"
+pytest = "^7.4.3"
 pytest-cov = "^4.1.0"
-black = "^23.7.0"
-mypy = "^1.4.1"
+black = "^23.10.1"
+mypy = "^1.6.1"
 python-semantic-release = "^7.15.3"
-types-setuptools = "^68.0.0.1"
-ruff = "^0.0.272"
+types-setuptools = "^68.2.0.0"
+ruff = "^0.1.3"
 
 [tool.poetry.scripts]
 pipenv-poetry-migrate = "pipenv_poetry_migrate.cli:app"
@@ -34,7 +34,7 @@ src_paths = ["pipenv_poetry_migrate", "tests"]
 target-version = "py38"
 select = ["ALL"]
 ignore = [
-    "D",        # temporary
+    "D",        # disabled temporary
     "ANN",      # handled by mypy
     "E501",     # line too long, handled by black
     "B008",     # do not perform function calls in argument defaults
@@ -42,8 +42,15 @@ ignore = [
 src = ["pipenv_poetry_migrate", "tests"]
 
 [tool.ruff.per-file-ignores]
-"pipenv_poetry_migrate/cli.py" = ["FBT"]
-"tests/*" = ["D", "S", "PLC1901"]
+"pipenv_poetry_migrate/cli.py" = [
+    "FBT",      # imcompatible with typer
+    "FA100",    # https://github.com/tiangolo/typer/issues/348
+]
+"tests/*" = [
+    "D",        # disabled temporary
+    "S101",     # use assert in tests
+    "PLC1901",  # empty strings are falsey, but are less specific in tests
+]
 
 [tool.ruff.pydocstyle]
 convention = "google"
