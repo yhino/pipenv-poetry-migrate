@@ -116,12 +116,17 @@ build-backend = "poetry.core.masonry.api"
 
 ## :handshake: Contributing
 
-To run tests:
+1. Fork and clone the repository, and create the development branch.
+2. Run `poetry install` to setup your develop environment.
+3. Do your code.
+4. Run `bash scripts/test.sh` to check that your test passed.
+5. Run `bash scripts/format.sh` and `bash scripts/lint.sh` to check that you haven't warnings.
+6. Open a PR on GitHub.
 
-1) `poetry install`  # get environment setup
-2) `make test`      # run the tests
+### Test cases
 
-Test cases are in `tests/toml`, update `Pipfile` with additional entries and `expect_pyproject.toml` with expected output
+Test cases are in `tests/toml`, update `Pipfile` with additional entries and `expect_pyproject.toml` with expected output.
+
 
 ## :pencil: License
 
