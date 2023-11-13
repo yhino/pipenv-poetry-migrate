@@ -5,6 +5,10 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
     commit-message:
       prefix: ":arrow_up:"
   # GitHub Actions
