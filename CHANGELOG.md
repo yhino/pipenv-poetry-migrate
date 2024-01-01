@@ -2,6 +2,49 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.2 (2024-01-01)
+
+### :arrow_up:
+
+* :arrow_up: Bump the dependencies group with 1 update ([`8142181`](https://github.com/yhino/pipenv-poetry-migrate/commit/81421818a36d7b4c5aff3e103527356a801ac497))
+* :arrow_up: Bump the dependencies group with 2 updates ([`a4c92de`](https://github.com/yhino/pipenv-poetry-migrate/commit/a4c92ded2bdd9c72f2fff8c77bc3fa99e6f2c768))
+* :arrow_up: Bump the dependencies group with 1 update ([`59a8285`](https://github.com/yhino/pipenv-poetry-migrate/commit/59a82851226684b2f4cd0c01a1b0286b44684044))
+* :arrow_up: Bump github/codeql-action from 2 to 3 ([`4ce306d`](https://github.com/yhino/pipenv-poetry-migrate/commit/4ce306de09d5d6dbf5c7f3b53d50700dad93728d))
+* :arrow_up: Bump actions/setup-python from 4 to 5 ([`780fd1e`](https://github.com/yhino/pipenv-poetry-migrate/commit/780fd1e5e62afe4e3e9e8717b9a608239da3d1c1))
+* :arrow_up: Bump the dependencies group with 1 update ([`be1b069`](https://github.com/yhino/pipenv-poetry-migrate/commit/be1b069f7d8a587ef15c0c91649953826e6c42d0))
+* :arrow_up: Bump the dependencies group with 1 update ([`31de335`](https://github.com/yhino/pipenv-poetry-migrate/commit/31de3359c7113bed1df8bab67a2b0ef0f808db22))
+* :arrow_up: Bump cryptography from 41.0.5 to 41.0.6 ([`adb9f64`](https://github.com/yhino/pipenv-poetry-migrate/commit/adb9f6440fa73bf55e8aced79f1f6e64dd03238b))
+* :arrow_up: Bump the dependencies group with 2 updates ([`3c64503`](https://github.com/yhino/pipenv-poetry-migrate/commit/3c64503cc7718845d98be0dd25ba9afb256a3727))
+* :arrow_up: Bump the dependencies group with 1 update ([`e6fdcef`](https://github.com/yhino/pipenv-poetry-migrate/commit/e6fdcef3101c4adb3f88414ad7ead86cd5b84133))
+* :arrow_up: Bump the dependencies group with 1 update ([`f58aeda`](https://github.com/yhino/pipenv-poetry-migrate/commit/f58aeda2802ec4654811b2c1b3a936d713f40bf9))
+* :arrow_up: Bump the dependencies group with 5 updates ([`0b3bd86`](https://github.com/yhino/pipenv-poetry-migrate/commit/0b3bd86f4aef240574577a6589b9b059e0b6156c))
+* :arrow_up: Bump actions/checkout from 3 to 4 ([`c6d4c24`](https://github.com/yhino/pipenv-poetry-migrate/commit/c6d4c24a3456dca58bdb0853ce00fa7e8d5b767a))
+
+### Other
+
+* :bookmark: 0.5.2 ([`050427c`](https://github.com/yhino/pipenv-poetry-migrate/commit/050427c7f1d32c76fdfae765b5b2bdf0473214a0))
+* Merge pull request #95 from yhino/dependabot/pip/dependencies-02d401a110 ([`60a9f68`](https://github.com/yhino/pipenv-poetry-migrate/commit/60a9f6827f55d8201ee592173eb99654229c743b))
+* Merge pull request #94 from yhino/dependabot/pip/dependencies-83d16c7264 ([`b8e537c`](https://github.com/yhino/pipenv-poetry-migrate/commit/b8e537c0828c61d15800b8c5ef67faf69620fdfc))
+* Merge pull request #93 from yhino/dependabot/pip/dependencies-541ebdb151 ([`23032c7`](https://github.com/yhino/pipenv-poetry-migrate/commit/23032c75295581bd9191448a42c136e3c50845a0))
+* Merge pull request #92 from yhino/dependabot/github_actions/github/codeql-action-3 ([`e260635`](https://github.com/yhino/pipenv-poetry-migrate/commit/e2606351f34e6f8108f82be0d8bd2ea43248cb9a))
+* Merge pull request #91 from yhino/dependabot/github_actions/actions/setup-python-5 ([`8ac5352`](https://github.com/yhino/pipenv-poetry-migrate/commit/8ac53526202aeb4065acad9f7203cb7d57cbd803))
+* Merge pull request #90 from yhino/dependabot/pip/dependencies-ec9a770ac4 ([`2f2f361`](https://github.com/yhino/pipenv-poetry-migrate/commit/2f2f361ee5bfb5409d233aaed0cd7f7d82b2f708))
+* Merge pull request #89 from yhino/dependabot/pip/dependencies-7a27a4a8ea ([`f5f4c3c`](https://github.com/yhino/pipenv-poetry-migrate/commit/f5f4c3cc3de87a5de88f06fa447f5da0fc28a187))
+* Merge pull request #88 from yhino/dependabot/pip/cryptography-41.0.6 ([`7a899a6`](https://github.com/yhino/pipenv-poetry-migrate/commit/7a899a61cbda9da9db335cf4e37a9654badf6bec))
+* Merge pull request #87 from yhino/dependabot/pip/dependencies-a021eb873a ([`e8fa319`](https://github.com/yhino/pipenv-poetry-migrate/commit/e8fa319fd424cb01ebf1907e2d837c83a2f33e69))
+* Merge pull request #86 from yhino/dependabot/pip/dependencies-a148c6b6b0 ([`7ed0eb6`](https://github.com/yhino/pipenv-poetry-migrate/commit/7ed0eb61ece07aad51241e20e5b0542aaf3ec735))
+* Merge pull request #85 from yhino/dependabot/pip/dependencies-faf493b27d ([`b699e0c`](https://github.com/yhino/pipenv-poetry-migrate/commit/b699e0c11a11d3dafca630b24028350b24eb50a9))
+* Merge pull request #83 from yhino/downgrade-python-semantic-release ([`94b9338`](https://github.com/yhino/pipenv-poetry-migrate/commit/94b9338e7c4a244fc5eefc620d2991665af46626))
+* :arrow_down: downgrade python-semantic-release ([`febf6df`](https://github.com/yhino/pipenv-poetry-migrate/commit/febf6df2ac31878cfdf50809abed85c78c9d0d97))
+* Merge pull request #81 from yhino/dependabot/pip/dependencies-b9ec48317a ([`17948f9`](https://github.com/yhino/pipenv-poetry-migrate/commit/17948f9ce5a6c6abbb091f513af60c15ec78d752))
+* Merge pull request #74 from yhino/dependabot/github_actions/actions/checkout-4 ([`7f35374`](https://github.com/yhino/pipenv-poetry-migrate/commit/7f35374b1dfc5c5f0fcaa7a8847fdda61644d451))
+* :construction_worker: configuration of grouped version upgrades by dependabot ([#80](https://github.com/yhino/pipenv-poetry-migrate/issues/80)) ([`64c4a9c`](https://github.com/yhino/pipenv-poetry-migrate/commit/64c4a9ca78677caed7c02ad36eb1742c011e8ede))
+* :construction_worker: add dependabot.yml ([#73](https://github.com/yhino/pipenv-poetry-migrate/issues/73)) ([`c848854`](https://github.com/yhino/pipenv-poetry-migrate/commit/c8488543cf11155e57ea5c04738044e7215e4279))
+* :construction_worker: change the github actions and the way tasks are run ([#72](https://github.com/yhino/pipenv-poetry-migrate/issues/72)) ([`8241af1`](https://github.com/yhino/pipenv-poetry-migrate/commit/8241af14cbe4a020af111f18164593ccd1d6160f))
+* :see_no_evil: add .tool-versions to .gitignore file ([#71](https://github.com/yhino/pipenv-poetry-migrate/issues/71)) ([`2a17410`](https://github.com/yhino/pipenv-poetry-migrate/commit/2a1741004fdc15087159a83ca9fa3e9893ed3985))
+* Switch formatter from black to ruff ([#70](https://github.com/yhino/pipenv-poetry-migrate/issues/70)) ([`3b11798`](https://github.com/yhino/pipenv-poetry-migrate/commit/3b117984b65e8b22500439583800e55733c45b97))
+* Upgrade packages and fix linter warnings ([#69](https://github.com/yhino/pipenv-poetry-migrate/issues/69)) ([`3acb208`](https://github.com/yhino/pipenv-poetry-migrate/commit/3acb20817259cfea77a60b22368bd9bea5921597))
+
 ## v0.5.1 (2023-10-24)
 
 ### :arrow_up:
