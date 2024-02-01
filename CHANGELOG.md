@@ -2,6 +2,23 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.3 (2024-02-01)
+
+### :arrow_up:
+
+* :arrow_up: Bump codecov/codecov-action from 3 to 4 ([#103](https://github.com/yhino/pipenv-poetry-migrate/issues/103)) ([`e3daaeb`](https://github.com/yhino/pipenv-poetry-migrate/commit/e3daaebbe84d1d281746687feff2014c08c8806f))
+* :arrow_up: Bump the dependencies group with 1 update ([#102](https://github.com/yhino/pipenv-poetry-migrate/issues/102)) ([`98ef131`](https://github.com/yhino/pipenv-poetry-migrate/commit/98ef131e9d859cf381cf271c11adf3333f5f8cb2))
+* :arrow_up: Bump the dependencies group with 2 updates ([#101](https://github.com/yhino/pipenv-poetry-migrate/issues/101)) ([`4376145`](https://github.com/yhino/pipenv-poetry-migrate/commit/4376145cebd6a25100c365efa6aaa89e2383c549))
+* :arrow_up: Bump the dependencies group with 1 update ([#100](https://github.com/yhino/pipenv-poetry-migrate/issues/100)) ([`644f799`](https://github.com/yhino/pipenv-poetry-migrate/commit/644f7992af9e75ebdd5fb1c7cee7d7d575f26dd6))
+* :arrow_up: Bump gitpython from 3.1.40 to 3.1.41 ([#98](https://github.com/yhino/pipenv-poetry-migrate/issues/98)) ([`bb5aeed`](https://github.com/yhino/pipenv-poetry-migrate/commit/bb5aeed075a5600bfe4ae23b8031132af518324c))
+* :arrow_up: Bump the dependencies group with 1 update ([#97](https://github.com/yhino/pipenv-poetry-migrate/issues/97)) ([`58b3ccd`](https://github.com/yhino/pipenv-poetry-migrate/commit/58b3ccda368200379710d59664adc9aaca2cc7fd))
+* :arrow_up: Bump the dependencies group with 1 update ([#96](https://github.com/yhino/pipenv-poetry-migrate/issues/96)) ([`1b33c0c`](https://github.com/yhino/pipenv-poetry-migrate/commit/1b33c0cc44c4176544161b6e59d807c748225c3e))
+
+### Other
+
+* :bookmark: 0.5.3 ([`647c726`](https://github.com/yhino/pipenv-poetry-migrate/commit/647c7267f46c6c372bd04001e5b3651fa3372f4b))
+* :wrench: change dependabot schedule interval to weekly ([#99](https://github.com/yhino/pipenv-poetry-migrate/issues/99)) ([`4de7ee2`](https://github.com/yhino/pipenv-poetry-migrate/commit/4de7ee2893d09f2dbc9825a483a25d6fb9ec525f))
+
 ## v0.5.2 (2024-01-01)
 
 ### :arrow_up:
