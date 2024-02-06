@@ -31,6 +31,9 @@ src_paths = ["pipenv_poetry_migrate", "tests"]
 
 [tool.ruff]
 target-version = "py38"
+src = ["pipenv_poetry_migrate", "tests"]
+
+[tool.ruff.lint]
 select = ["ALL"]
 ignore = [
     "D",        # disabled temporary
@@ -39,9 +42,8 @@ ignore = [
     "COM812",   # may cause conflicts when used with the formatter
     "ISC001",   # may cause conflicts when used with the formatter
 ]
-src = ["pipenv_poetry_migrate", "tests"]
 
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "pipenv_poetry_migrate/cli.py" = [
     "FBT",      # incompatible with typer
     "FA100",    # https://github.com/tiangolo/typer/issues/348
@@ -52,7 +54,7 @@ src = ["pipenv_poetry_migrate", "tests"]
     "PLC1901",  # empty strings are falsey, but are less specific in tests
 ]
 
-[tool.ruff.pydocstyle]
+[tool.ruff.lint.pydocstyle]
 convention = "google"
 
 [tool.mypy]
