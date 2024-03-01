@@ -2,6 +2,23 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.4 (2024-03-01)
+
+### :arrow_up:
+
+* :arrow_up: Bump the dependencies group with 2 updates ([#110](https://github.com/yhino/pipenv-poetry-migrate/issues/110)) ([`52b3b6f`](https://github.com/yhino/pipenv-poetry-migrate/commit/52b3b6f4ca789d43d9493a011019b4b7391b2eb9))
+* :arrow_up: Bump cryptography from 42.0.2 to 42.0.4 ([#109](https://github.com/yhino/pipenv-poetry-migrate/issues/109)) ([`c958ebe`](https://github.com/yhino/pipenv-poetry-migrate/commit/c958ebea67edc64e19f72bc38a57a154fa55bd21))
+* :arrow_up: Bump the dependencies group with 3 updates ([#108](https://github.com/yhino/pipenv-poetry-migrate/issues/108)) ([`78e4ee5`](https://github.com/yhino/pipenv-poetry-migrate/commit/78e4ee5c7621d36679d92ee603d4246abdd4ec88))
+* :arrow_up: Bump cryptography from 42.0.0 to 42.0.2 ([#107](https://github.com/yhino/pipenv-poetry-migrate/issues/107)) ([`6462746`](https://github.com/yhino/pipenv-poetry-migrate/commit/64627460c5d6bda362633a27fd953ed2f29464e2))
+* :arrow_up: Bump the dependencies group with 1 update ([#106](https://github.com/yhino/pipenv-poetry-migrate/issues/106)) ([`b092501`](https://github.com/yhino/pipenv-poetry-migrate/commit/b092501fc30fc81ff8b3e739ceeabe51219fed0b))
+* :arrow_up: Bump cryptography from 41.0.6 to 42.0.0 ([#105](https://github.com/yhino/pipenv-poetry-migrate/issues/105)) ([`5877e6a`](https://github.com/yhino/pipenv-poetry-migrate/commit/5877e6a0a10594b039fe2eb7663c3d1b178498f6))
+* :arrow_up: Bump the dependencies group with 3 updates ([#104](https://github.com/yhino/pipenv-poetry-migrate/issues/104)) ([`8beddb5`](https://github.com/yhino/pipenv-poetry-migrate/commit/8beddb55c3021fdd4bb641f17ed883432add7c22))
+
+### Other
+
+* :bookmark: 0.5.4 ([`daee68a`](https://github.com/yhino/pipenv-poetry-migrate/commit/daee68a7e56917ba60ebaf4243cf24f676faaabb))
+* :pencil: fix dead link of badge ([#111](https://github.com/yhino/pipenv-poetry-migrate/issues/111)) ([`299e481`](https://github.com/yhino/pipenv-poetry-migrate/commit/299e48193effd20f34b553265be31bebcbd2ef20))
+
 ## v0.5.3 (2024-02-01)
 
 ### :arrow_up:
