@@ -33,13 +33,13 @@ When want to run dry-run mode:
 
 Dry-run mode is `pyproject.toml` file does not overwrite, results are displayed on standard output.
 
-> **Note**  
+> [!Note]  
 > If the dependency already exists in the poetry dependency and you want to re-migrate it, please use the `--re-migrate` option.
 > However, if the dependency is removed from pipenv, the poetry dependency is not removed.
 >
 >     $ pipenv-poetry-migrate -f Pipfile -t pyproject.toml --re-migrate
 
-> **Note**  
+> [!Note]  
 > The default behavior is to migrate with the [group notation](https://python-poetry.org/docs/master/managing-dependencies/#dependency-groups), which has been available since Poetry 1.2.0.
 > If you want to migrate with `dev-dependencies` notation, please use the `--on-use-group-notation` option.
 > 
