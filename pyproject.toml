@@ -11,11 +11,11 @@ readme = 'README.md'
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0"
 tomlkit = "^0.12.1"
-typer = "^0.9.0"
+typer = ">=0.9,<0.11"
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=7.4.3,<9.0.0"
-pytest-cov = "^4.1.0"
+pytest-cov = ">=4.1,<6.0"
 mypy = "^1.6.1"
 python-semantic-release = "^7.15.3"
 types-setuptools = ">=68.2,<70.0"
