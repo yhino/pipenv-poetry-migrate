@@ -2,6 +2,21 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.5 (2024-04-01)
+
+### :arrow_up:
+
+* :arrow_up: Bump the dependencies group with 1 update ([#117](https://github.com/yhino/pipenv-poetry-migrate/issues/117)) ([`cb902ad`](https://github.com/yhino/pipenv-poetry-migrate/commit/cb902ad1cb06297847f1eb677e520aa0bcc23336))
+* :arrow_up: Bump the dependencies group with 3 updates ([#116](https://github.com/yhino/pipenv-poetry-migrate/issues/116)) ([`3ec1680`](https://github.com/yhino/pipenv-poetry-migrate/commit/3ec1680d9e308b71828e53fe83571c9fd7b1d945))
+* :arrow_up: Bump the dependencies group with 2 updates ([#115](https://github.com/yhino/pipenv-poetry-migrate/issues/115)) ([`1c20586`](https://github.com/yhino/pipenv-poetry-migrate/commit/1c205868af7885e8c06922ce5cb4c07fff9c5488))
+* :arrow_up: Bump the dependencies group with 4 updates ([#113](https://github.com/yhino/pipenv-poetry-migrate/issues/113)) ([`496f272`](https://github.com/yhino/pipenv-poetry-migrate/commit/496f27232ee1e21b4e78443929780ecd17f03f71))
+* :arrow_up: Bump the dependencies group with 4 updates ([#112](https://github.com/yhino/pipenv-poetry-migrate/issues/112)) ([`dd7c4ab`](https://github.com/yhino/pipenv-poetry-migrate/commit/dd7c4ab6a860ab1a65bee5177c32a220d0c335b1))
+
+### Other
+
+* :bookmark: 0.5.5 ([`22b53a1`](https://github.com/yhino/pipenv-poetry-migrate/commit/22b53a1cdf01c1ea4ed34a29e8c37b264cfb0453))
+* Fix highlight a "Note" in README.md ([#114](https://github.com/yhino/pipenv-poetry-migrate/issues/114)) ([`63756de`](https://github.com/yhino/pipenv-poetry-migrate/commit/63756de0b24c54a00c5d7211a2c5d0bb08e6cc09))
+
 ## v0.5.4 (2024-03-01)
 
 ### :arrow_up:
