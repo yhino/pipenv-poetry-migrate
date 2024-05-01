@@ -17,11 +17,24 @@ jobs:
       with:
         fetch-depth: 0
 
+    - name: Setup python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install poetry
+      run: pipx install poetry
+
     - name: Semantic Release
       id: release
       uses: python-semantic-release/python-semantic-release@v9.6.0
+      env:
+        TZ: 'Asia/Tokyo'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Build dist packages
+      run: poetry build
 
     - name: Publish package distributions to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
