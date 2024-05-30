@@ -1,3 +1,3 @@
-import pkg_resources
+import importlib.metadata
 
-__version__ = pkg_resources.get_distribution("pipenv-poetry-migrate").version
+__version__ = importlib.metadata.distribution("pipenv-poetry-migrate").version
