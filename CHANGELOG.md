@@ -2,6 +2,55 @@
 
 
 
+## v0.5.7 (2024-06-01)
+
+### :alien:
+
+* :alien: migration from pkg_resources to importlib_metadata (#143) ([`93e9ea4`](https://github.com/yhino/pipenv-poetry-migrate/commit/93e9ea4617dc322aff0825d62e13dec980046a3c))
+
+### :arrow_up:
+
+* :arrow_up: upgrade deps (#142) ([`5bfe764`](https://github.com/yhino/pipenv-poetry-migrate/commit/5bfe764696799ea3c3b057fb5531d0893dcf57e8))
+
+* :arrow_up: Bump the dependencies group with 2 updates (#141) ([`fd385f7`](https://github.com/yhino/pipenv-poetry-migrate/commit/fd385f7f3537403125d71d7fcf02da592f1fef08))
+
+* :arrow_up: Bump python-semantic-release/python-semantic-release (#139) ([`88e29e3`](https://github.com/yhino/pipenv-poetry-migrate/commit/88e29e30dc0da8b4c132b83c6ac4b07238dd5ffc))
+
+* :arrow_up: Bump the dependencies group with 2 updates (#138) ([`e878efb`](https://github.com/yhino/pipenv-poetry-migrate/commit/e878efbf5354e4da7f32e95a952086da9a884bd6))
+
+* :arrow_up: Bump python-semantic-release/python-semantic-release (#137) ([`dcd373b`](https://github.com/yhino/pipenv-poetry-migrate/commit/dcd373bb6e59e79feed418d3ba63839c5d29ef72))
+
+* :arrow_up: Bump the dependencies group with 3 updates (#136) ([`ae39208`](https://github.com/yhino/pipenv-poetry-migrate/commit/ae392089f73656aa96bc4e6725dce7f898064659))
+
+* :arrow_up: Bump python-semantic-release/python-semantic-release (#134) ([`6d709b6`](https://github.com/yhino/pipenv-poetry-migrate/commit/6d709b67ec69c6a4d5d4a2bed67cb782eef287d2))
+
+* :arrow_up: Bump jinja2 from 3.1.3 to 3.1.4 (#133) ([`fa1efd7`](https://github.com/yhino/pipenv-poetry-migrate/commit/fa1efd7ede3ba8e381cd28a34c98f7534019038e))
+
+* :arrow_up: Bump ruff from 0.4.2 to 0.4.3 in the dependencies group (#132) ([`3fd157b`](https://github.com/yhino/pipenv-poetry-migrate/commit/3fd157b0156d21702c79529238097fb38c83f349))
+
+* :arrow_up: Bump python-semantic-release/python-semantic-release (#131) ([`6d65f0a`](https://github.com/yhino/pipenv-poetry-migrate/commit/6d65f0aec0641a82e54865c8bef6fe8b38508807))
+
+* :arrow_up: upgrade dependencies (#130) ([`e9863e1`](https://github.com/yhino/pipenv-poetry-migrate/commit/e9863e1933651670dc476ce9e6fa267b07de17e4))
+
+### :bug:
+
+* :bug: fix incomplete release workflow (#129)
+
+* :bug: fix incomplete release workflow
+
+other minor issues also fixed
+
+* :bug: change step name ([`4ea6808`](https://github.com/yhino/pipenv-poetry-migrate/commit/4ea68085d109a8b1e3da50db9c13fc10d38015ba))
+
+### Other
+
+* :bookmark: v0.5.7 ([`c5d2d17`](https://github.com/yhino/pipenv-poetry-migrate/commit/c5d2d17f26626ddc206873cc0c4efc2a9a96ce61))
+
+* --- (#140) ([`57efc4c`](https://github.com/yhino/pipenv-poetry-migrate/commit/57efc4c6ce668f388f0a76c135c076f3bbbcc2de))
+
+* change the update interval of the github action dependabot (#135) ([`45164cb`](https://github.com/yhino/pipenv-poetry-migrate/commit/45164cb04831860af91279a45f93b811067e633f))
+
+
 ## v0.5.6 (2024-04-30)
 
 ### :arrow_up:
