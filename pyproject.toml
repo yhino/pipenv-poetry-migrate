@@ -10,7 +10,7 @@ readme = 'README.md'
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0"
-tomlkit = "^0.12.1"
+tomlkit = ">=0.12.1,<0.14.0"
 typer = ">=0.9,<0.13"
 
 [tool.poetry.group.dev.dependencies]
