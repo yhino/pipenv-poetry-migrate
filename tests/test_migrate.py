@@ -6,7 +6,7 @@ from pipenv_poetry_migrate.loader import load_toml
 from pipenv_poetry_migrate.migrate import MigrationOption, PipenvPoetryMigration
 
 
-@pytest.fixture()
+@pytest.fixture
 def load_fixture(request: pytest.FixtureRequest) -> Callable[[str], Any]:
     def _load_fixture(fixture_name: str) -> Any:
         return request.getfixturevalue(fixture_name)
