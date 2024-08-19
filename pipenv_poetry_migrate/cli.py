@@ -1,7 +1,7 @@
 from pathlib import Path
-from typing import Optional
 
 import typer
+from typing_extensions import Annotated
 
 from pipenv_poetry_migrate import __version__
 from pipenv_poetry_migrate.loader import (
@@ -25,47 +25,59 @@ def show_version(is_show: bool) -> None:
     },
 )
 def main(
-    pipfile: Path = typer.Option(
-        ...,
-        "--pipfile",
-        "-f",
-        help="path to Pipfile",
-    ),
-    pyproject_toml: Path = typer.Option(
-        ...,
-        "--pyproject-toml",
-        "-t",
-        help="path to pyproject.toml",
-    ),
-    use_group_notation: bool = typer.Option(
-        True,
-        "--use-group-notation/--no-use-group-notation",
-        "--use-group/--no-use-group",
-        help="migrate development dependencies with the new group notation",
-    ),
-    re_migrate: bool = typer.Option(
-        False,
-        "--re-migrate",
-        help="""
+    pipfile: Annotated[
+        Path,
+        typer.Option(
+            "--pipfile",
+            "-f",
+            help="path to Pipfile",
+        ),
+    ],
+    pyproject_toml: Annotated[
+        Path,
+        typer.Option(
+            "--pyproject-toml",
+            "-t",
+            help="path to pyproject.toml",
+        ),
+    ],
+    use_group_notation: Annotated[
+        bool,
+        typer.Option(
+            "--use-group-notation/--no-use-group-notation",
+            "--use-group/--no-use-group",
+            help="migrate development dependencies with the new group notation",
+        ),
+    ] = True,
+    re_migrate: Annotated[
+        bool,
+        typer.Option(
+            "--re-migrate",
+            help="""
             re-migrate a dependency if it already exists in the poetry dependency.
             however, if a dependency is removed from pipenv,
             it does not remove the poetry dependency
         """,
-    ),
-    dry_run: bool = typer.Option(
-        False,
-        "--dry-run",
-        "-n",
-        help="dry-run",
-    ),
-    _: Optional[bool] = typer.Option(
-        None,
-        "--version",
-        "-v",
-        help="show version",
-        callback=show_version,
-        is_eager=True,
-    ),
+        ),
+    ] = False,
+    dry_run: Annotated[
+        bool,
+        typer.Option(
+            "--dry-run",
+            "-n",
+            help="dry-run",
+        ),
+    ] = False,
+    _: Annotated[
+        bool,
+        typer.Option(
+            "--version",
+            "-v",
+            help="show version",
+            callback=show_version,
+            is_eager=True,
+        ),
+    ] = False,
 ) -> None:
     """Migrate pipenv to poetry."""
     try:
