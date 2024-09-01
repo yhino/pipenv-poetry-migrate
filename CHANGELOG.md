@@ -1,5 +1,51 @@
 # CHANGELOG
 
+## v0.5.9 (2024-09-01)
+
+### :arrow_up:
+
+* :arrow_up: upgrade deps @20240901 (#169) ([`70ea5bf`](https://github.com/yhino/pipenv-poetry-migrate/commit/70ea5bfdd84149ba2009f2b5157109cbeb93c89a))
+
+* :arrow_up: Bump python-semantic-release/python-semantic-release (#168) ([`42642a4`](https://github.com/yhino/pipenv-poetry-migrate/commit/42642a4c025578898e7d30947ebea6e4763eadc4))
+
+* :arrow_up: Bump the dependencies group with 4 updates (#167) ([`c704712`](https://github.com/yhino/pipenv-poetry-migrate/commit/c704712d93cff71596a43238bc4e0adb30db7f7f))
+
+* :arrow_up: upgrade dependencies (#165) ([`21112db`](https://github.com/yhino/pipenv-poetry-migrate/commit/21112dbfa24ae3f5cb8de58b1ca4293d2424b74b))
+
+* :arrow_up: Bump the dependencies group with 4 updates (#163) ([`f056554`](https://github.com/yhino/pipenv-poetry-migrate/commit/f056554856789d4701c2387914f5f89c2e267035))
+
+* :arrow_up: Bump the dependencies group with 2 updates (#162) ([`7bd1def`](https://github.com/yhino/pipenv-poetry-migrate/commit/7bd1def4aa3540a31f07e6a92e42dcb9febcb081))
+
+* :arrow_up: Bump the dependencies group with 2 updates (#161) ([`4365151`](https://github.com/yhino/pipenv-poetry-migrate/commit/43651510277778cde9853e61db94b3e1b4106810))
+
+* :arrow_up: Bump the dependencies group with 3 updates (#160) ([`6325096`](https://github.com/yhino/pipenv-poetry-migrate/commit/63250961ac6eaa13fcbbb568a67a6a3385943efe))
+
+* :arrow_up: Bump the dependencies group with 4 updates (#159) ([`53f76b4`](https://github.com/yhino/pipenv-poetry-migrate/commit/53f76b48e44f86b84af7d2dda758c6385441eac1))
+
+* :arrow_up: Bump python-semantic-release/python-semantic-release (#158) ([`42df3e2`](https://github.com/yhino/pipenv-poetry-migrate/commit/42df3e2378106428776a9d34edca88705939a71a))
+
+* :arrow_up: Bump the dependencies group with 3 updates (#157) ([`a9aa732`](https://github.com/yhino/pipenv-poetry-migrate/commit/a9aa732c0b67279160e9c832421b74cdeedd10f6))
+
+* :arrow_up: Bump zipp from 3.19.0 to 3.19.1 (#156) ([`2f905e2`](https://github.com/yhino/pipenv-poetry-migrate/commit/2f905e2e18a471600079a9b0335497decf06d30e))
+
+* :arrow_up: Bump python-semantic-release/python-semantic-release (#155) ([`ace5f8d`](https://github.com/yhino/pipenv-poetry-migrate/commit/ace5f8de952c176a69342dd9dc8f2f42607cd5c9))
+
+* :arrow_up: Bump the dependencies group with 2 updates (#154) ([`a9127ca`](https://github.com/yhino/pipenv-poetry-migrate/commit/a9127ca7fae06b865228cc33381c8163d2e1b8de))
+
+* :arrow_up: Bump certifi from 2024.2.2 to 2024.7.4 (#153) ([`347824e`](https://github.com/yhino/pipenv-poetry-migrate/commit/347824e84194c72b47f0d9c4b3188d05a92bad6d))
+
+### :bug:
+
+* :bug: fix python version required (#166)
+
+fix to 3.8 or higher ([`49aa509`](https://github.com/yhino/pipenv-poetry-migrate/commit/49aa50956eeb8283f07fbc940217da20f351b5d1))
+
+### Other
+
+* :bookmark: v0.5.9 ([`006a8d6`](https://github.com/yhino/pipenv-poetry-migrate/commit/006a8d682066dad09876f117c7e38d5b031b30cb))
+
+* :recycle: change typer notation (#164) ([`73a4c65`](https://github.com/yhino/pipenv-poetry-migrate/commit/73a4c651214da2afffc1d2fd9c6d07c49d42251d))
+
 ## v0.5.8 (2024-07-01)
 
 ### :arrow_up:
@@ -1066,9 +1112,9 @@ release 0.1.2 ([`1f6d662`](https://github.com/yhino/pipenv-poetry-migrate/commit
 
 fixed #2 support the &#39;package-name[extras] = &#34;*&#34;&#39; format ([`f6cc892`](https://github.com/yhino/pipenv-poetry-migrate/commit/f6cc892a63d4d8f48143b03a18aab55c201801e6))
 
-* add github workflow ([`de0a7fb`](https://github.com/yhino/pipenv-poetry-migrate/commit/de0a7fb3650d22d6c92ba368b722464e3a5563af))
-
 * fixed #2 support the &#39;package-name[extras] = &#34;*&#34;&#39; format ([`5940dd1`](https://github.com/yhino/pipenv-poetry-migrate/commit/5940dd1c4c67effa3db46de80e31cb3138483d70))
+
+* add github workflow ([`de0a7fb`](https://github.com/yhino/pipenv-poetry-migrate/commit/de0a7fb3650d22d6c92ba368b722464e3a5563af))
 
 * rename workflow ([`ae1f110`](https://github.com/yhino/pipenv-poetry-migrate/commit/ae1f110863e0ab477e93d614af242a556fb316cc))
 
