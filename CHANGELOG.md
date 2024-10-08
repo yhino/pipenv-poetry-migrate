@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## v0.5.10 (2024-10-08)
+
+### :arrow_up:
+
+* :arrow_up: Bump ruff from 0.6.8 to 0.6.9 in the dependencies group (#176) ([`e48ff80`](https://github.com/yhino/pipenv-poetry-migrate/commit/e48ff8051f0b7e00643882fe4219b3b4009b80f6))
+
+* :arrow_up: Bump python-semantic-release/python-semantic-release (#174) ([`cdaa971`](https://github.com/yhino/pipenv-poetry-migrate/commit/cdaa971e1e269237a16dcaf544e0448efb5ad6d2))
+
+* :arrow_up: Bump ruff from 0.6.7 to 0.6.8 in the dependencies group (#175) ([`701f2bf`](https://github.com/yhino/pipenv-poetry-migrate/commit/701f2bf0d252ca415c0c42cc343729b787cbfceb))
+
+* :arrow_up: Bump the dependencies group with 2 updates (#173) ([`8754f5a`](https://github.com/yhino/pipenv-poetry-migrate/commit/8754f5a4cd217d6c2570eee94243cad18516537b))
+
+* :arrow_up: Bump the dependencies group with 2 updates (#172) ([`715b977`](https://github.com/yhino/pipenv-poetry-migrate/commit/715b9774dc31372f729fac0940821f45f1506b1b))
+
+* :arrow_up: Bump the dependencies group with 2 updates (#171) ([`1369e5d`](https://github.com/yhino/pipenv-poetry-migrate/commit/1369e5d1deba034fdde17416c0a25b6f75144d5b))
+
+* :arrow_up: Bump python-semantic-release/python-semantic-release (#170) ([`fe65bd7`](https://github.com/yhino/pipenv-poetry-migrate/commit/fe65bd708306edd4ed91516a49d4d51586946db2))
+
+### Other
+
+* :bookmark: v0.5.10 ([`3ba1da1`](https://github.com/yhino/pipenv-poetry-migrate/commit/3ba1da1a45da07579219793adb0e152535f189d7))
+
 ## v0.5.9 (2024-09-01)
 
 ### :arrow_up:
