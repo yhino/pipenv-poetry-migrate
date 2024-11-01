@@ -1,5 +1,25 @@
 # CHANGELOG
 
+
+## v0.5.11 (2024-11-01)
+
+### :arrow_up:
+
+* :arrow_up: Bump the dependencies group with 3 updates (#181) ([`7f72c74`](https://github.com/yhino/pipenv-poetry-migrate/commit/7f72c744bf70d6b475645c82442c73db3d635e0b))
+
+* :arrow_up: Bump python-semantic-release/python-semantic-release (#180) ([`29cd8f6`](https://github.com/yhino/pipenv-poetry-migrate/commit/29cd8f631912e84bd96813d2012588ed49ca1e3b))
+
+* :arrow_up: Bump the dependencies group with 3 updates (#179) ([`5651ce9`](https://github.com/yhino/pipenv-poetry-migrate/commit/5651ce90830cb5dfb983d811e43ab9cd27f1129e))
+
+* :arrow_up: Bump types-setuptools in the dependencies group (#178) ([`e14512d`](https://github.com/yhino/pipenv-poetry-migrate/commit/e14512db08d7da370b1319f1d369a8189fc77f9c))
+
+* :arrow_up: Bump python-semantic-release/python-semantic-release (#177) ([`826f03d`](https://github.com/yhino/pipenv-poetry-migrate/commit/826f03d24d566b6fb51562c036affc0ad32448ca))
+
+### Other
+
+* :bookmark: v0.5.11 ([`89c617a`](https://github.com/yhino/pipenv-poetry-migrate/commit/89c617a42d82d7156d8db8f4df05ed022fde8508))
+
+
 ## v0.5.10 (2024-10-08)
 
 ### :arrow_up:
@@ -21,6 +41,7 @@
 ### Other
 
 * :bookmark: v0.5.10 ([`3ba1da1`](https://github.com/yhino/pipenv-poetry-migrate/commit/3ba1da1a45da07579219793adb0e152535f189d7))
+
 
 ## v0.5.9 (2024-09-01)
 
@@ -68,6 +89,7 @@ fix to 3.8 or higher ([`49aa509`](https://github.com/yhino/pipenv-poetry-migrate
 
 * :recycle: change typer notation (#164) ([`73a4c65`](https://github.com/yhino/pipenv-poetry-migrate/commit/73a4c651214da2afffc1d2fd9c6d07c49d42251d))
 
+
 ## v0.5.8 (2024-07-01)
 
 ### :arrow_up:
@@ -93,6 +115,7 @@ fix to 3.8 or higher ([`49aa509`](https://github.com/yhino/pipenv-poetry-migrate
 ### Other
 
 * :bookmark: v0.5.8 ([`1d50e9e`](https://github.com/yhino/pipenv-poetry-migrate/commit/1d50e9e4ed5b6a978a2c621f0c78792f0158579c))
+
 
 ## v0.5.7 (2024-06-01)
 
@@ -142,6 +165,7 @@ other minor issues also fixed
 
 * change the update interval of the github action dependabot (#135) ([`45164cb`](https://github.com/yhino/pipenv-poetry-migrate/commit/45164cb04831860af91279a45f93b811067e633f))
 
+
 ## v0.5.6 (2024-04-30)
 
 ### :arrow_up:
@@ -176,6 +200,7 @@ Closes #60 ([`75e419a`](https://github.com/yhino/pipenv-poetry-migrate/commit/75
 
 * :bookmark: v0.5.6 ([`d06589a`](https://github.com/yhino/pipenv-poetry-migrate/commit/d06589ad668db45b2c42406b0ef98954f4ba1b6b))
 
+
 ## v0.5.5 (2024-04-01)
 
 ### :arrow_up:
@@ -194,7 +219,8 @@ Closes #60 ([`75e419a`](https://github.com/yhino/pipenv-poetry-migrate/commit/75
 
 * :bookmark: 0.5.5 ([`22b53a1`](https://github.com/yhino/pipenv-poetry-migrate/commit/22b53a1cdf01c1ea4ed34a29e8c37b264cfb0453))
 
-* fix highlight a &#34;Note&#34; in README.md (#114) ([`63756de`](https://github.com/yhino/pipenv-poetry-migrate/commit/63756de0b24c54a00c5d7211a2c5d0bb08e6cc09))
+* fix highlight a "Note" in README.md (#114) ([`63756de`](https://github.com/yhino/pipenv-poetry-migrate/commit/63756de0b24c54a00c5d7211a2c5d0bb08e6cc09))
+
 
 ## v0.5.4 (2024-03-01)
 
@@ -220,6 +246,7 @@ Closes #60 ([`75e419a`](https://github.com/yhino/pipenv-poetry-migrate/commit/75
 
 * :pencil: fix dead link of badge (#111) ([`299e481`](https://github.com/yhino/pipenv-poetry-migrate/commit/299e48193effd20f34b553265be31bebcbd2ef20))
 
+
 ## v0.5.3 (2024-02-01)
 
 ### :arrow_up:
@@ -244,6 +271,7 @@ Closes #60 ([`75e419a`](https://github.com/yhino/pipenv-poetry-migrate/commit/75
 
 * :wrench: change dependabot schedule interval to weekly (#99) ([`4de7ee2`](https://github.com/yhino/pipenv-poetry-migrate/commit/4de7ee2893d09f2dbc9825a483a25d6fb9ec525f))
 
+
 ## v0.5.2 (2024-01-01)
 
 ### :arrow_up:
@@ -266,7 +294,7 @@ updated-dependencies:
   dependency-group: dependencies
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`8142181`](https://github.com/yhino/pipenv-poetry-migrate/commit/81421818a36d7b4c5aff3e103527356a801ac497))
+Signed-off-by: dependabot[bot] <support@github.com> ([`8142181`](https://github.com/yhino/pipenv-poetry-migrate/commit/81421818a36d7b4c5aff3e103527356a801ac497))
 
 * :arrow_up: Bump the dependencies group with 2 updates
 
@@ -294,7 +322,7 @@ updated-dependencies:
   dependency-group: dependencies
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`a4c92de`](https://github.com/yhino/pipenv-poetry-migrate/commit/a4c92ded2bdd9c72f2fff8c77bc3fa99e6f2c768))
+Signed-off-by: dependabot[bot] <support@github.com> ([`a4c92de`](https://github.com/yhino/pipenv-poetry-migrate/commit/a4c92ded2bdd9c72f2fff8c77bc3fa99e6f2c768))
 
 * :arrow_up: Bump the dependencies group with 1 update
 
@@ -312,7 +340,7 @@ updated-dependencies:
   dependency-group: dependencies
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`59a8285`](https://github.com/yhino/pipenv-poetry-migrate/commit/59a82851226684b2f4cd0c01a1b0286b44684044))
+Signed-off-by: dependabot[bot] <support@github.com> ([`59a8285`](https://github.com/yhino/pipenv-poetry-migrate/commit/59a82851226684b2f4cd0c01a1b0286b44684044))
 
 * :arrow_up: Bump github/codeql-action from 2 to 3
 
@@ -328,7 +356,7 @@ updated-dependencies:
   update-type: version-update:semver-major
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`4ce306d`](https://github.com/yhino/pipenv-poetry-migrate/commit/4ce306de09d5d6dbf5c7f3b53d50700dad93728d))
+Signed-off-by: dependabot[bot] <support@github.com> ([`4ce306d`](https://github.com/yhino/pipenv-poetry-migrate/commit/4ce306de09d5d6dbf5c7f3b53d50700dad93728d))
 
 * :arrow_up: Bump actions/setup-python from 4 to 5
 
@@ -343,7 +371,7 @@ updated-dependencies:
   update-type: version-update:semver-major
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`780fd1e`](https://github.com/yhino/pipenv-poetry-migrate/commit/780fd1e5e62afe4e3e9e8717b9a608239da3d1c1))
+Signed-off-by: dependabot[bot] <support@github.com> ([`780fd1e`](https://github.com/yhino/pipenv-poetry-migrate/commit/780fd1e5e62afe4e3e9e8717b9a608239da3d1c1))
 
 * :arrow_up: Bump the dependencies group with 1 update
 
@@ -361,7 +389,7 @@ updated-dependencies:
   dependency-group: dependencies
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`be1b069`](https://github.com/yhino/pipenv-poetry-migrate/commit/be1b069f7d8a587ef15c0c91649953826e6c42d0))
+Signed-off-by: dependabot[bot] <support@github.com> ([`be1b069`](https://github.com/yhino/pipenv-poetry-migrate/commit/be1b069f7d8a587ef15c0c91649953826e6c42d0))
 
 * :arrow_up: Bump the dependencies group with 1 update
 
@@ -377,7 +405,7 @@ updated-dependencies:
   dependency-group: dependencies
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`31de335`](https://github.com/yhino/pipenv-poetry-migrate/commit/31de3359c7113bed1df8bab67a2b0ef0f808db22))
+Signed-off-by: dependabot[bot] <support@github.com> ([`31de335`](https://github.com/yhino/pipenv-poetry-migrate/commit/31de3359c7113bed1df8bab67a2b0ef0f808db22))
 
 * :arrow_up: Bump cryptography from 41.0.5 to 41.0.6
 
@@ -391,7 +419,7 @@ updated-dependencies:
   dependency-type: indirect
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`adb9f64`](https://github.com/yhino/pipenv-poetry-migrate/commit/adb9f6440fa73bf55e8aced79f1f6e64dd03238b))
+Signed-off-by: dependabot[bot] <support@github.com> ([`adb9f64`](https://github.com/yhino/pipenv-poetry-migrate/commit/adb9f6440fa73bf55e8aced79f1f6e64dd03238b))
 
 * :arrow_up: Bump the dependencies group with 2 updates
 
@@ -417,7 +445,7 @@ updated-dependencies:
   dependency-group: dependencies
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`3c64503`](https://github.com/yhino/pipenv-poetry-migrate/commit/3c64503cc7718845d98be0dd25ba9afb256a3727))
+Signed-off-by: dependabot[bot] <support@github.com> ([`3c64503`](https://github.com/yhino/pipenv-poetry-migrate/commit/3c64503cc7718845d98be0dd25ba9afb256a3727))
 
 * :arrow_up: Bump the dependencies group with 1 update
 
@@ -435,7 +463,7 @@ updated-dependencies:
   dependency-group: dependencies
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`e6fdcef`](https://github.com/yhino/pipenv-poetry-migrate/commit/e6fdcef3101c4adb3f88414ad7ead86cd5b84133))
+Signed-off-by: dependabot[bot] <support@github.com> ([`e6fdcef`](https://github.com/yhino/pipenv-poetry-migrate/commit/e6fdcef3101c4adb3f88414ad7ead86cd5b84133))
 
 * :arrow_up: Bump the dependencies group with 1 update
 
@@ -453,7 +481,7 @@ updated-dependencies:
   dependency-group: dependencies
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`f58aeda`](https://github.com/yhino/pipenv-poetry-migrate/commit/f58aeda2802ec4654811b2c1b3a936d713f40bf9))
+Signed-off-by: dependabot[bot] <support@github.com> ([`f58aeda`](https://github.com/yhino/pipenv-poetry-migrate/commit/f58aeda2802ec4654811b2c1b3a936d713f40bf9))
 
 * :arrow_up: Bump the dependencies group with 5 updates
 
@@ -514,7 +542,7 @@ updated-dependencies:
   dependency-group: dependencies
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`0b3bd86`](https://github.com/yhino/pipenv-poetry-migrate/commit/0b3bd86f4aef240574577a6589b9b059e0b6156c))
+Signed-off-by: dependabot[bot] <support@github.com> ([`0b3bd86`](https://github.com/yhino/pipenv-poetry-migrate/commit/0b3bd86f4aef240574577a6589b9b059e0b6156c))
 
 * :arrow_up: Bump actions/checkout from 3 to 4
 
@@ -530,7 +558,7 @@ updated-dependencies:
   update-type: version-update:semver-major
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`c6d4c24`](https://github.com/yhino/pipenv-poetry-migrate/commit/c6d4c24a3456dca58bdb0853ce00fa7e8d5b767a))
+Signed-off-by: dependabot[bot] <support@github.com> ([`c6d4c24`](https://github.com/yhino/pipenv-poetry-migrate/commit/c6d4c24a3456dca58bdb0853ce00fa7e8d5b767a))
 
 ### Other
 
@@ -588,6 +616,7 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`c6d4c24`](https://g
 
 * :rotating_light: fix linter warnings ([`3acb208`](https://github.com/yhino/pipenv-poetry-migrate/commit/3acb20817259cfea77a60b22368bd9bea5921597))
 
+
 ## v0.5.1 (2023-10-24)
 
 ### :arrow_up:
@@ -605,8 +634,8 @@ updated-dependencies:
   dependency-type: indirect
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
-Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.github.com&gt; ([`c745770`](https://github.com/yhino/pipenv-poetry-migrate/commit/c7457700677dcc7c6690cb1e4e91069309c608ce))
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([`c745770`](https://github.com/yhino/pipenv-poetry-migrate/commit/c7457700677dcc7c6690cb1e4e91069309c608ce))
 
 * :arrow_up: Bump gitpython from 3.1.35 to 3.1.37 (#67) ([`68351c0`](https://github.com/yhino/pipenv-poetry-migrate/commit/68351c0502e389a1b15da74b31c3c75ab474c982))
 
@@ -617,6 +646,7 @@ Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.githu
 ### Other
 
 * :bookmark: 0.5.1 ([`fe2a996`](https://github.com/yhino/pipenv-poetry-migrate/commit/fe2a996d2729ad0b6baae660cd0f556f62fe50c1))
+
 
 ## v0.5.0 (2023-09-10)
 
@@ -635,8 +665,8 @@ updated-dependencies:
   dependency-type: indirect
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
-Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.github.com&gt; ([`797db7c`](https://github.com/yhino/pipenv-poetry-migrate/commit/797db7c4695165ef65676ab1b9c3f6e9640a95b9))
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([`797db7c`](https://github.com/yhino/pipenv-poetry-migrate/commit/797db7c4695165ef65676ab1b9c3f6e9640a95b9))
 
 * :arrow_up: Bump gitpython from 3.1.32 to 3.1.34 (#61)
 
@@ -651,8 +681,8 @@ updated-dependencies:
   dependency-type: indirect
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
-Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.github.com&gt; ([`ee65b96`](https://github.com/yhino/pipenv-poetry-migrate/commit/ee65b96f6940adcfce2663a11957c04a520fd81f))
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([`ee65b96`](https://github.com/yhino/pipenv-poetry-migrate/commit/ee65b96f6940adcfce2663a11957c04a520fd81f))
 
 ### :sparkles:
 
@@ -669,6 +699,7 @@ Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.githu
 * fix Note syntax ([`fedfd44`](https://github.com/yhino/pipenv-poetry-migrate/commit/fedfd44ae2af82a3ccf659fba1f3e3eee5bb8f8d))
 
 * :construction_worker: fix codecov config ([`aa40e36`](https://github.com/yhino/pipenv-poetry-migrate/commit/aa40e3699f93211b74f619b865ba9d1eeaf3553a))
+
 
 ## v0.4.0 (2023-08-09)
 
@@ -688,8 +719,8 @@ updated-dependencies:
   dependency-type: indirect
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
-Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.github.com&gt; ([`18de64c`](https://github.com/yhino/pipenv-poetry-migrate/commit/18de64c72d003a0937078885276c10766b751a84))
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([`18de64c`](https://github.com/yhino/pipenv-poetry-migrate/commit/18de64c72d003a0937078885276c10766b751a84))
 
 * :arrow_up: Bump requests from 2.29.0 to 2.31.0 (#53) ([`0912d33`](https://github.com/yhino/pipenv-poetry-migrate/commit/0912d334baa0f92d3546052f0bb649105e742415))
 
@@ -729,7 +760,7 @@ see https://github.com/python-semantic-release/python-semantic-release/blob/mast
 
 * :green_heart: disabled deepsource transformers
 
-* Revert &#34;style: Format code with black and isort&#34;
+* Revert "style: Format code with black and isort"
 
 This reverts commit b7e9774f419d372bd7f3a9c2861a988569b73421.
 
@@ -739,7 +770,7 @@ This reverts commit b7e9774f419d372bd7f3a9c2861a988569b73421.
 
 ---------
 
-Co-authored-by: deepsource-autofix[bot] &lt;62050782+deepsource-autofix[bot]@users.noreply.github.com&gt; ([`c6572ec`](https://github.com/yhino/pipenv-poetry-migrate/commit/c6572ecde4def0b0f53171b60c9951c755ee4f5d))
+Co-authored-by: deepsource-autofix[bot] <62050782+deepsource-autofix[bot]@users.noreply.github.com> ([`c6572ec`](https://github.com/yhino/pipenv-poetry-migrate/commit/c6572ecde4def0b0f53171b60c9951c755ee4f5d))
 
 * :heavy_plus_sign: add linter `tryceratops` (#52) ([`709b7cd`](https://github.com/yhino/pipenv-poetry-migrate/commit/709b7cd1d3b9226c57a0a0528cd90f5e04411a7d))
 
@@ -750,6 +781,7 @@ Co-authored-by: deepsource-autofix[bot] &lt;62050782+deepsource-autofix[bot]@use
 * :arrow_up: upgrade dependencies and linters
 
 * :construction_worker: remove python 3.7 testing ([`edc7288`](https://github.com/yhino/pipenv-poetry-migrate/commit/edc728850e008e2030cd877f92f5f687ab7e705e))
+
 
 ## v0.3.2 (2023-02-22)
 
@@ -768,8 +800,8 @@ updated-dependencies:
   dependency-type: indirect
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
-Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.github.com&gt; ([`ddd86b6`](https://github.com/yhino/pipenv-poetry-migrate/commit/ddd86b63525ebc817a02241136307fb84e5466fe))
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([`ddd86b6`](https://github.com/yhino/pipenv-poetry-migrate/commit/ddd86b63525ebc817a02241136307fb84e5466fe))
 
 ### :bug:
 
@@ -782,6 +814,7 @@ Closes #48 ([`383ba73`](https://github.com/yhino/pipenv-poetry-migrate/commit/38
 ### Other
 
 * :bookmark: 0.3.2 ([`e4ef6ba`](https://github.com/yhino/pipenv-poetry-migrate/commit/e4ef6ba24fbf0d99082b1ec03f4009cf681fc140))
+
 
 ## v0.3.1 (2023-01-11)
 
@@ -800,10 +833,10 @@ updated-dependencies:
   dependency-type: indirect
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
+Signed-off-by: dependabot[bot] <support@github.com>
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
-Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.github.com&gt; ([`e87a604`](https://github.com/yhino/pipenv-poetry-migrate/commit/e87a6040bd61f12edb9e3de767570a53e1ccfab0))
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([`e87a604`](https://github.com/yhino/pipenv-poetry-migrate/commit/e87a6040bd61f12edb9e3de767570a53e1ccfab0))
 
 * :arrow_up: Bump setuptools from 65.5.0 to 65.5.1 (#45) ([`e12b44e`](https://github.com/yhino/pipenv-poetry-migrate/commit/e12b44ed6f7c2b5a6eaddc87701bc9807d833ca5))
 
@@ -820,10 +853,10 @@ updated-dependencies:
   dependency-type: indirect
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
+Signed-off-by: dependabot[bot] <support@github.com>
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
-Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.github.com&gt; ([`9e3fbba`](https://github.com/yhino/pipenv-poetry-migrate/commit/9e3fbba8f008a361b67400207f1c08be84a088cb))
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([`9e3fbba`](https://github.com/yhino/pipenv-poetry-migrate/commit/9e3fbba8f008a361b67400207f1c08be84a088cb))
 
 ### Other
 
@@ -849,6 +882,7 @@ https://www.python.org/downloads/release/python-3111/ ([`8a332ef`](https://githu
 
 * :recycle: reformat ([`a9e4f38`](https://github.com/yhino/pipenv-poetry-migrate/commit/a9e4f382e65fc145327e67da1587c124d5496940))
 
+
 ## v0.3.0 (2022-12-23)
 
 ### :arrow_up:
@@ -865,11 +899,11 @@ updated-dependencies:
   dependency-type: indirect
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
+Signed-off-by: dependabot[bot] <support@github.com>
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
-Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.github.com&gt;
-Co-authored-by: Yoshiyuki HINO &lt;yhinoz@gmail.com&gt; ([`813fb80`](https://github.com/yhino/pipenv-poetry-migrate/commit/813fb802ce7f9b3f0bb0d09996b531b9bdbb3e2a))
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Yoshiyuki HINO <yhinoz@gmail.com> ([`813fb80`](https://github.com/yhino/pipenv-poetry-migrate/commit/813fb802ce7f9b3f0bb0d09996b531b9bdbb3e2a))
 
 ### :children_crossing:
 
@@ -895,9 +929,10 @@ Co-authored-by: Yoshiyuki HINO &lt;yhinoz@gmail.com&gt; ([`813fb80`](https://git
 
 * Remove implicit `object` from the base class (#33)
 
-Co-authored-by: deepsource-autofix[bot] &lt;62050782+deepsource-autofix[bot]@users.noreply.github.com&gt; ([`b31bf0e`](https://github.com/yhino/pipenv-poetry-migrate/commit/b31bf0ef2fbcbb7f3e9e2873f0d06f9f28fd0476))
+Co-authored-by: deepsource-autofix[bot] <62050782+deepsource-autofix[bot]@users.noreply.github.com> ([`b31bf0e`](https://github.com/yhino/pipenv-poetry-migrate/commit/b31bf0ef2fbcbb7f3e9e2873f0d06f9f28fd0476))
 
 * Add .deepsource.toml ([`95e9751`](https://github.com/yhino/pipenv-poetry-migrate/commit/95e9751971566056ef070fad54d53875178b4f16))
+
 
 ## v0.2.1 (2022-09-26)
 
@@ -945,6 +980,7 @@ Closes #25 ([`75de4ef`](https://github.com/yhino/pipenv-poetry-migrate/commit/75
 
 * :construction_worker: configure codeql-analysis ([`22c953b`](https://github.com/yhino/pipenv-poetry-migrate/commit/22c953be6b17714cc52d9a1db6678bbcbaa5a041))
 
+
 ## v0.2.0 (2021-11-23)
 
 ### :sparkles:
@@ -976,19 +1012,21 @@ Closes #23
 
 * :wrench: fix flake8 settings (#20) ([`663c2da`](https://github.com/yhino/pipenv-poetry-migrate/commit/663c2dab57c36c9c64725dff2d907bb3c0a1fb58))
 
+
 ## v0.1.6 (2021-07-12)
 
 ### :bug:
 
-* :bug: allows no &#34;dev-packages&#34; in Pipfile (#19)
+* :bug: allows no "dev-packages" in Pipfile (#19)
 
-Manually created Pipfile often doesn&#39;t contain &#34;dev-packages&#34;.
-This fix allows Pipfile without &#34;dev-packages&#34; to successfully
+Manually created Pipfile often doesn't contain "dev-packages".
+This fix allows Pipfile without "dev-packages" to successfully
 migrate to Poetry. ([`f8aa7b7`](https://github.com/yhino/pipenv-poetry-migrate/commit/f8aa7b7af2d3330e463b1e903b0ecf38adfeda07))
 
 ### Other
 
 * :bookmark: 0.1.6 ([`f4762df`](https://github.com/yhino/pipenv-poetry-migrate/commit/f4762dfe643b2bfad9d6f0e0dc6eea09afc74113))
+
 
 ## v0.1.5 (2021-06-24)
 
@@ -996,7 +1034,7 @@ migrate to Poetry. ([`f8aa7b7`](https://github.com/yhino/pipenv-poetry-migrate/c
 
 * :bug: Merge pull request #18 from lingster/master
 
-Co-authored-by: Ling Li &lt;ling.li@utiliteam.co.uk&gt; ([`6f37f83`](https://github.com/yhino/pipenv-poetry-migrate/commit/6f37f830c6063f8b9125294c93678b1d6978fa9c))
+Co-authored-by: Ling Li <ling.li@utiliteam.co.uk> ([`6f37f83`](https://github.com/yhino/pipenv-poetry-migrate/commit/6f37f830c6063f8b9125294c93678b1d6978fa9c))
 
 ### Other
 
@@ -1041,6 +1079,7 @@ Co-authored-by: Ling Li &lt;ling.li@utiliteam.co.uk&gt; ([`6f37f83`](https://git
 :white_check_mark: fixed to get version from pyproject.toml when testing ([`21d64c9`](https://github.com/yhino/pipenv-poetry-migrate/commit/21d64c96f314b97d028afb27672f228bbdae33bf))
 
 * :white_check_mark: fixed to get version from pyproject.toml when testing ([`982ea22`](https://github.com/yhino/pipenv-poetry-migrate/commit/982ea224f705ee46ac19413e0b930053aa77926b))
+
 
 ## v0.1.4 (2021-04-11)
 
@@ -1088,6 +1127,7 @@ changed the dependent version of tomlkit ([`2c3335a`](https://github.com/yhino/p
 
 * :construction_worker: upload coverage to Codecov ([`8d6f3c1`](https://github.com/yhino/pipenv-poetry-migrate/commit/8d6f3c17950a1b3edc7a55272df10f2142a97c31))
 
+
 ## v0.1.3 (2020-12-15)
 
 ### :sparkles:
@@ -1116,6 +1156,7 @@ Release 0.1.3 ([`e0116b6`](https://github.com/yhino/pipenv-poetry-migrate/commit
 
 * :construction_worker: update isort ([`ef9eea0`](https://github.com/yhino/pipenv-poetry-migrate/commit/ef9eea0a09e26cdd696c47daf4d0d7097991f30e))
 
+
 ## v0.1.2 (2020-09-20)
 
 ### :arrow_up:
@@ -1132,9 +1173,9 @@ release 0.1.2 ([`1f6d662`](https://github.com/yhino/pipenv-poetry-migrate/commit
 
 * Merge pull request #5 from yhino/issue-2
 
-fixed #2 support the &#39;package-name[extras] = &#34;*&#34;&#39; format ([`f6cc892`](https://github.com/yhino/pipenv-poetry-migrate/commit/f6cc892a63d4d8f48143b03a18aab55c201801e6))
+fixed #2 support the 'package-name[extras] = "*"' format ([`f6cc892`](https://github.com/yhino/pipenv-poetry-migrate/commit/f6cc892a63d4d8f48143b03a18aab55c201801e6))
 
-* fixed #2 support the &#39;package-name[extras] = &#34;*&#34;&#39; format ([`5940dd1`](https://github.com/yhino/pipenv-poetry-migrate/commit/5940dd1c4c67effa3db46de80e31cb3138483d70))
+* fixed #2 support the 'package-name[extras] = "*"' format ([`5940dd1`](https://github.com/yhino/pipenv-poetry-migrate/commit/5940dd1c4c67effa3db46de80e31cb3138483d70))
 
 * add github workflow ([`de0a7fb`](https://github.com/yhino/pipenv-poetry-migrate/commit/de0a7fb3650d22d6c92ba368b722464e3a5563af))
 
@@ -1142,9 +1183,9 @@ fixed #2 support the &#39;package-name[extras] = &#34;*&#34;&#39; format ([`f6cc
 
 * Merge pull request #4 from yhino/issue-3
 
-fixed #3 if &#34;pyproject.toml&#34; does not exist, print the message to run `poetry init` first ([`097bfbe`](https://github.com/yhino/pipenv-poetry-migrate/commit/097bfbef62b8f5fdb3cac649b42ffbbd1eae50ef))
+fixed #3 if "pyproject.toml" does not exist, print the message to run `poetry init` first ([`097bfbe`](https://github.com/yhino/pipenv-poetry-migrate/commit/097bfbef62b8f5fdb3cac649b42ffbbd1eae50ef))
 
-* fixed #3 if &#34;pyproject.toml&#34; does not exist, print the message to run `poetry init` first ([`480173f`](https://github.com/yhino/pipenv-poetry-migrate/commit/480173f7b3508ee40b8491b5dc6f6cf6a8daf455))
+* fixed #3 if "pyproject.toml" does not exist, print the message to run `poetry init` first ([`480173f`](https://github.com/yhino/pipenv-poetry-migrate/commit/480173f7b3508ee40b8491b5dc6f6cf6a8daf455))
 
 * Update README.md ([`c02d6e9`](https://github.com/yhino/pipenv-poetry-migrate/commit/c02d6e9b236942b9ae579b40627fb322b491242c))
 
@@ -1170,7 +1211,7 @@ Add license scan report and status ([`c6fc557`](https://github.com/yhino/pipenv-
 
 * Add license scan report and status
 
-Signed off by: fossabot &lt;badges@fossa.com&gt; ([`9321ef8`](https://github.com/yhino/pipenv-poetry-migrate/commit/9321ef879239095284c1c75db1364dcaaeec253f))
+Signed off by: fossabot <badges@fossa.com> ([`9321ef8`](https://github.com/yhino/pipenv-poetry-migrate/commit/9321ef879239095284c1c75db1364dcaaeec253f))
 
 * :construction_worker: add setting for mypy ([`aa25d3f`](https://github.com/yhino/pipenv-poetry-migrate/commit/aa25d3fed63984114c9a09413fa518afbd8a1801))
 
