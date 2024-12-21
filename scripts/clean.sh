@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-set -ue
 set -x
 
 rm -rf build dist .eggs *.egg-info
