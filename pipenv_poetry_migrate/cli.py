@@ -1,7 +1,7 @@
 from pathlib import Path
+from typing import Annotated
 
 import typer
-from typing_extensions import Annotated
 
 from pipenv_poetry_migrate import __version__
 from pipenv_poetry_migrate.loader import (
