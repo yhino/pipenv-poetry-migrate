@@ -1,6 +1,40 @@
 # CHANGELOG
 
 
+## v0.6.1 (2025-02-02)
+
+### :arrow_up:
+
+- :arrow_up: Bump python-semantic-release/python-semantic-release
+  ([#201](https://github.com/yhino/pipenv-poetry-migrate/pull/201),
+  [`5496707`](https://github.com/yhino/pipenv-poetry-migrate/commit/549670784224b5262e9b20ce2c5ec2fcc84528f3))
+
+- :arrow_up: Bump python-semantic-release/python-semantic-release
+  ([#204](https://github.com/yhino/pipenv-poetry-migrate/pull/204),
+  [`13c1d66`](https://github.com/yhino/pipenv-poetry-migrate/commit/13c1d666211253604f1398b76f2a7937dd93947a))
+
+- :arrow_up: Bump ruff from 0.9.1 to 0.9.2 in the dependencies group
+  ([#202](https://github.com/yhino/pipenv-poetry-migrate/pull/202),
+  [`8a940c8`](https://github.com/yhino/pipenv-poetry-migrate/commit/8a940c83cf519416b56bbdf0141970c73fa13fa3))
+
+- :arrow_up: Bump ruff from 0.9.2 to 0.9.3 in the dependencies group
+  ([#203](https://github.com/yhino/pipenv-poetry-migrate/pull/203),
+  [`7c0d640`](https://github.com/yhino/pipenv-poetry-migrate/commit/7c0d640f0d1f1e0ae9594c0bed8cf39cfeaaddf5))
+
+- :arrow_up: Bump the dependencies group with 2 updates
+  ([#199](https://github.com/yhino/pipenv-poetry-migrate/pull/199),
+  [`98583f4`](https://github.com/yhino/pipenv-poetry-migrate/commit/98583f42b1bc62b6fcf0b50885828111e83f420c))
+
+- :arrow_up: Bump the dependencies group with 2 updates
+  ([#200](https://github.com/yhino/pipenv-poetry-migrate/pull/200),
+  [`5738ef4`](https://github.com/yhino/pipenv-poetry-migrate/commit/5738ef411798138dfa119837c632bb287b2bf610))
+
+### Other
+
+- :bookmark: v0.6.1
+  ([`3fbf43f`](https://github.com/yhino/pipenv-poetry-migrate/commit/3fbf43f07f58dd82e660fb0e7fa1e359daf6d87c))
+
+
 ## v0.6.0 (2025-01-01)
 
 ### :arrow_up:
@@ -1475,6 +1509,11 @@ Co-authored-by: Ling Li <ling.li@utiliteam.co.uk>
 - :bug: fix version number management
   ([`29e2e7a`](https://github.com/yhino/pipenv-poetry-migrate/commit/29e2e7a4e90bfb5ff8294bf937ccb134f83a431b))
 
+### :memo:
+
+- :memo: add badge of the codecov
+  ([`b1284af`](https://github.com/yhino/pipenv-poetry-migrate/commit/b1284af687c5e51f0e3e40927241bf98f48f7db9))
+
 ### :sparkles:
 
 - :sparkles: add show version option
@@ -1490,9 +1529,6 @@ Co-authored-by: Ling Li <ling.li@utiliteam.co.uk>
 
 - :construction_worker: upload coverage to Codecov
   ([`8d6f3c1`](https://github.com/yhino/pipenv-poetry-migrate/commit/8d6f3c17950a1b3edc7a55272df10f2142a97c31))
-
-- :memo: add badge of the codecov
-  ([`b1284af`](https://github.com/yhino/pipenv-poetry-migrate/commit/b1284af687c5e51f0e3e40927241bf98f48f7db9))
 
 - :package: fix package information
   ([`7480a9d`](https://github.com/yhino/pipenv-poetry-migrate/commit/7480a9df81c5dadd66fc887a085f7577fc06f559))
