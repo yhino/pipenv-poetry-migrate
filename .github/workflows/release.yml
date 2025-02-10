@@ -27,7 +27,7 @@ jobs:
 
     - name: Semantic Release
       id: release
-      uses: python-semantic-release/python-semantic-release@v9.17.0
+      uses: python-semantic-release/python-semantic-release@v9.19.0
       env:
         TZ: 'Asia/Tokyo'
       with:
