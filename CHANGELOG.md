@@ -1,6 +1,44 @@
 # CHANGELOG
 
 
+## v0.6.2 (2025-03-02)
+
+### :arrow_up:
+
+- :arrow_up: Bump python-semantic-release/python-semantic-release
+  ([#206](https://github.com/yhino/pipenv-poetry-migrate/pull/206),
+  [`7bbb38c`](https://github.com/yhino/pipenv-poetry-migrate/commit/7bbb38cf7d64a6c8b21cea8fc143ced93ad47ab9))
+
+- :arrow_up: Bump python-semantic-release/python-semantic-release
+  ([#209](https://github.com/yhino/pipenv-poetry-migrate/pull/209),
+  [`5f9e0ab`](https://github.com/yhino/pipenv-poetry-migrate/commit/5f9e0abdf240a72e22b409ff6c370aad8d09a3ae))
+
+- :arrow_up: Bump python-semantic-release/python-semantic-release
+  ([#210](https://github.com/yhino/pipenv-poetry-migrate/pull/210),
+  [`3ba9d90`](https://github.com/yhino/pipenv-poetry-migrate/commit/3ba9d906fac2acb3a8586094d5c9a4473eeae1dd))
+
+- :arrow_up: Bump ruff from 0.9.3 to 0.9.4 in the dependencies group
+  ([#205](https://github.com/yhino/pipenv-poetry-migrate/pull/205),
+  [`5d85ba2`](https://github.com/yhino/pipenv-poetry-migrate/commit/5d85ba2a4f1322b325aea6bd85e49d99013d25e3))
+
+- :arrow_up: Bump ruff from 0.9.5 to 0.9.6 in the dependencies group
+  ([#208](https://github.com/yhino/pipenv-poetry-migrate/pull/208),
+  [`a29118f`](https://github.com/yhino/pipenv-poetry-migrate/commit/a29118f989ab891238b4114fd48914d2def7a6a5))
+
+- :arrow_up: Bump ruff from 0.9.6 to 0.9.7 in the dependencies group
+  ([#211](https://github.com/yhino/pipenv-poetry-migrate/pull/211),
+  [`04412fc`](https://github.com/yhino/pipenv-poetry-migrate/commit/04412fc9743f2fa22a49ef941593525da6d28266))
+
+- :arrow_up: Bump the dependencies group with 3 updates
+  ([#207](https://github.com/yhino/pipenv-poetry-migrate/pull/207),
+  [`32dddfe`](https://github.com/yhino/pipenv-poetry-migrate/commit/32dddfec281e2eda9b90f57ac8f8c8ce58d88b4e))
+
+### Other
+
+- :bookmark: v0.6.2
+  ([`7c639d6`](https://github.com/yhino/pipenv-poetry-migrate/commit/7c639d6f36025952cea5c08cb107b71630b6be1c))
+
+
 ## v0.6.1 (2025-02-02)
 
 ### :arrow_up:
@@ -581,9 +619,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4. - [Re
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -596,9 +632,7 @@ Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-python dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -609,9 +643,7 @@ Bumps [cryptography](https://github.com/pyca/cryptography) from 41.0.5 to 41.0.6
   [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst) -
   [Commits](https://github.com/pyca/cryptography/compare/41.0.5...41.0.6)
 
---- updated-dependencies: - dependency-name: cryptography dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: cryptography dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -625,9 +657,7 @@ Bumps [github/codeql-action](https://github.com/github/codeql-action) from 2 to 
 
 --- updated-dependencies: - dependency-name: github/codeql-action dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -645,9 +675,7 @@ Updates `pytest` from 7.4.3 to 7.4.4 - [Release
 
 update-type: version-update:semver-patch
 
-dependency-group: dependencies
-
-...
+dependency-group: dependencies ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -664,9 +692,7 @@ Bumps the dependencies group with 1 update: [ruff](https://github.com/astral-sh/
 
 update-type: version-update:semver-patch
 
-dependency-group: dependencies
-
-...
+dependency-group: dependencies ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -683,9 +709,7 @@ Bumps the dependencies group with 1 update: [ruff](https://github.com/astral-sh/
 
 update-type: version-update:semver-patch
 
-dependency-group: dependencies
-
-...
+dependency-group: dependencies ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -700,9 +724,7 @@ Bumps the dependencies group with 1 update: [types-setuptools](https://github.co
 
 update-type: version-update:semver-major
 
-dependency-group: dependencies
-
-...
+dependency-group: dependencies ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -719,9 +741,7 @@ Bumps the dependencies group with 1 update: [ruff](https://github.com/astral-sh/
 
 update-type: version-update:semver-patch
 
-dependency-group: dependencies
-
-...
+dependency-group: dependencies ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -738,9 +758,7 @@ Bumps the dependencies group with 1 update: [tomlkit](https://github.com/sdispat
 
 update-type: version-update:semver-patch
 
-dependency-group: dependencies
-
-...
+dependency-group: dependencies ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -768,7 +786,7 @@ dependency-group: dependencies
 
 update-type: version-update:semver-patch
 
-...
+dependency-group: dependencies ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -793,7 +811,7 @@ dependency-group: dependencies
 
 - dependency-name: types-setuptools dependency-type: direct:development
 
-...
+dependency-group: dependencies ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -848,7 +866,7 @@ update-type: version-update:semver-major
 
 - dependency-name: ruff dependency-type: direct:development
 
-...
+dependency-group: dependencies ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -962,9 +980,7 @@ Bumps [urllib3](https://github.com/urllib3/urllib3) from 2.0.6 to 2.0.7. - [Rele
   [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst) -
   [Commits](https://github.com/urllib3/urllib3/compare/2.0.6...2.0.7)
 
---- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -989,9 +1005,7 @@ Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.32
   [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES) -
   [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.32...3.1.34)
 
---- updated-dependencies: - dependency-name: gitpython dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: gitpython dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1006,9 +1020,7 @@ Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.34
   [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES) -
   [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.34...3.1.35)
 
---- updated-dependencies: - dependency-name: gitpython dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: gitpython dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1048,9 +1060,7 @@ Bumps [cryptography](https://github.com/pyca/cryptography) from 40.0.2 to 41.0.2
   [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst) -
   [Commits](https://github.com/pyca/cryptography/compare/40.0.2...41.0.2)
 
---- updated-dependencies: - dependency-name: cryptography dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: cryptography dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1149,9 +1159,7 @@ Bumps [cryptography](https://github.com/pyca/cryptography) from 3.4.8 to 39.0.1.
   [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst) -
   [Commits](https://github.com/pyca/cryptography/compare/3.4.8...39.0.1)
 
---- updated-dependencies: - dependency-name: cryptography dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: cryptography dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1185,9 +1193,7 @@ Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.23
   [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES) -
   [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.23...3.1.30)
 
---- updated-dependencies: - dependency-name: gitpython dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: gitpython dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1206,9 +1212,7 @@ Bumps [wheel](https://github.com/pypa/wheel) from 0.37.1 to 0.38.1. - [Release
   [Changelog](https://github.com/pypa/wheel/blob/main/docs/news.rst) -
   [Commits](https://github.com/pypa/wheel/compare/0.37.1...0.38.1)
 
---- updated-dependencies: - dependency-name: wheel dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: wheel dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1261,9 +1265,7 @@ Bumps [certifi](https://github.com/certifi/python-certifi) from 2021.5.30 to 202
   notes](https://github.com/certifi/python-certifi/releases) -
   [Commits](https://github.com/certifi/python-certifi/compare/2021.05.30...2022.12.07)
 
---- updated-dependencies: - dependency-name: certifi dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: certifi dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
