@@ -1,5 +1,6 @@
+from collections.abc import Callable
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 
 import pytest
 from pipenv_poetry_migrate.loader import load_toml
