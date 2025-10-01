@@ -58,6 +58,7 @@ strict = true
 ignore_missing_imports = true
 
 [tool.semantic_release]
+allow_zero_version = true
 version_toml = ["pyproject.toml:tool.poetry.version"]
 commit_parser = "emoji"
 
