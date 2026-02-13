@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
+set -ue
 set -x
 
 export PYTHONPATH=.
-poetry run pytest -vv --cov=pipenv_poetry_migrate --cov-report=term tests ${@}
+poetry run pytest -vv --cov=pipenv_poetry_migrate --cov-report=term ${@} tests
