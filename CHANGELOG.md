@@ -2,6 +2,116 @@
 
 <!-- version list -->
 
+## v0.8.0 (2026-02-13)
+
+### :arrow_up:
+
+- :arrow_up: Bump actions/checkout from 5 to 6
+  ([#266](https://github.com/yhino/pipenv-poetry-migrate/pull/266),
+  [`cd17a84`](https://github.com/yhino/pipenv-poetry-migrate/commit/cd17a84aee93528da4bee0f63903e65327fe71e5))
+
+- :arrow_up: Bump github/codeql-action from 3 to 4
+  ([#259](https://github.com/yhino/pipenv-poetry-migrate/pull/259),
+  [`872534b`](https://github.com/yhino/pipenv-poetry-migrate/commit/872534b58444c4917a505ba136c2ebf46d2056e8))
+
+- :arrow_up: Bump python-semantic-release/python-semantic-release
+  ([#272](https://github.com/yhino/pipenv-poetry-migrate/pull/272),
+  [`21ccfcd`](https://github.com/yhino/pipenv-poetry-migrate/commit/21ccfcd58b9077275c45d185327089d1518bbca7))
+
+- :arrow_up: Bump python-semantic-release/python-semantic-release
+  ([#267](https://github.com/yhino/pipenv-poetry-migrate/pull/267),
+  [`2005e50`](https://github.com/yhino/pipenv-poetry-migrate/commit/2005e5085218f7d94821769e8133ab397f65dfc8))
+
+- :arrow_up: Bump python-semantic-release/python-semantic-release
+  ([#264](https://github.com/yhino/pipenv-poetry-migrate/pull/264),
+  [`25b5c7d`](https://github.com/yhino/pipenv-poetry-migrate/commit/25b5c7d238052a6b447bf03808f239de88cdfe7a))
+
+- :arrow_up: Bump ruff from 0.13.2 to 0.13.3 in the dependencies group
+  ([#258](https://github.com/yhino/pipenv-poetry-migrate/pull/258),
+  [`4f6e7e9`](https://github.com/yhino/pipenv-poetry-migrate/commit/4f6e7e9cb2edcffaa78ebcf221a11341e8594cfa))
+
+- :arrow_up: Bump ruff from 0.13.3 to 0.14.1 in the dependencies group
+  ([#260](https://github.com/yhino/pipenv-poetry-migrate/pull/260),
+  [`a633401`](https://github.com/yhino/pipenv-poetry-migrate/commit/a633401d50673e52127fec5f02c378c33c93f571))
+
+- :arrow_up: Bump ruff from 0.14.2 to 0.14.3 in the dependencies group
+  ([#262](https://github.com/yhino/pipenv-poetry-migrate/pull/262),
+  [`ed34969`](https://github.com/yhino/pipenv-poetry-migrate/commit/ed349696668ac43d67cda26962748fba379c7b86))
+
+- :arrow_up: Bump the dependencies group with 2 updates
+  ([#278](https://github.com/yhino/pipenv-poetry-migrate/pull/278),
+  [`f39ca9a`](https://github.com/yhino/pipenv-poetry-migrate/commit/f39ca9abc54504777fd031d78143509783c602d7))
+
+- :arrow_up: Bump the dependencies group with 2 updates
+  ([#277](https://github.com/yhino/pipenv-poetry-migrate/pull/277),
+  [`11aced3`](https://github.com/yhino/pipenv-poetry-migrate/commit/11aced3fce208cc08f4a6663326518fce9611f4c))
+
+- :arrow_up: Bump the dependencies group with 2 updates
+  ([#276](https://github.com/yhino/pipenv-poetry-migrate/pull/276),
+  [`90dabc2`](https://github.com/yhino/pipenv-poetry-migrate/commit/90dabc220449bbcf8fecf2e663b1aec33a1d8786))
+
+- :arrow_up: Bump the dependencies group with 2 updates
+  ([#274](https://github.com/yhino/pipenv-poetry-migrate/pull/274),
+  [`0b3513a`](https://github.com/yhino/pipenv-poetry-migrate/commit/0b3513a148cbbe9f27844ae98187980a4cb85eb6))
+
+- :arrow_up: Bump the dependencies group with 2 updates
+  ([#271](https://github.com/yhino/pipenv-poetry-migrate/pull/271),
+  [`0121b82`](https://github.com/yhino/pipenv-poetry-migrate/commit/0121b825e507a9b5e5d14ca1de5e4aa9796d4f0c))
+
+- :arrow_up: Bump the dependencies group with 2 updates
+  ([#270](https://github.com/yhino/pipenv-poetry-migrate/pull/270),
+  [`69051ca`](https://github.com/yhino/pipenv-poetry-migrate/commit/69051ca350a1d1f131f79bbf51cd32ac03609633))
+
+- :arrow_up: Bump the dependencies group with 2 updates
+  ([#268](https://github.com/yhino/pipenv-poetry-migrate/pull/268),
+  [`3ac95dd`](https://github.com/yhino/pipenv-poetry-migrate/commit/3ac95ddf42730e830afb2a535de3d291738c3ba1))
+
+- :arrow_up: Bump the dependencies group with 2 updates
+  ([#265](https://github.com/yhino/pipenv-poetry-migrate/pull/265),
+  [`e8fd180`](https://github.com/yhino/pipenv-poetry-migrate/commit/e8fd18025f7359737ea91c657153c98019395772))
+
+- :arrow_up: Bump the dependencies group with 2 updates
+  ([#263](https://github.com/yhino/pipenv-poetry-migrate/pull/263),
+  [`fa9ca55`](https://github.com/yhino/pipenv-poetry-migrate/commit/fa9ca551e16375394b24764d932982588f5cfe0c))
+
+- :arrow_up: Bump the dependencies group with 2 updates
+  ([#261](https://github.com/yhino/pipenv-poetry-migrate/pull/261),
+  [`488a425`](https://github.com/yhino/pipenv-poetry-migrate/commit/488a425c995511734e4b57f8fb2d7eb165d2ef29))
+
+- :arrow_up: Bump the dependencies group with 3 updates
+  ([#273](https://github.com/yhino/pipenv-poetry-migrate/pull/273),
+  [`e5705b7`](https://github.com/yhino/pipenv-poetry-migrate/commit/e5705b7c8b1583d3fa2e7dea1ef6ccea57338ddf))
+
+- :arrow_up: Bump urllib3 from 2.5.0 to 2.6.0
+  ([#269](https://github.com/yhino/pipenv-poetry-migrate/pull/269),
+  [`9294560`](https://github.com/yhino/pipenv-poetry-migrate/commit/9294560c8541e7a64dd4e8e693e130281c4c8c65))
+
+- :arrow_up: Bump urllib3 from 2.6.0 to 2.6.3
+  ([#275](https://github.com/yhino/pipenv-poetry-migrate/pull/275),
+  [`bb3c021`](https://github.com/yhino/pipenv-poetry-migrate/commit/bb3c021701d6492dee83c003215274566bf3d54b))
+
+### :bug:
+
+- :bug: capture errors that occur in scripts
+  ([#279](https://github.com/yhino/pipenv-poetry-migrate/pull/279),
+  [`7c8874e`](https://github.com/yhino/pipenv-poetry-migrate/commit/7c8874e334d0cce44557e8fa495c839e8998e008))
+
+### :lock:
+
+- :lock: regenerate lockfile ([#271](https://github.com/yhino/pipenv-poetry-migrate/pull/271),
+  [`0121b82`](https://github.com/yhino/pipenv-poetry-migrate/commit/0121b825e507a9b5e5d14ca1de5e4aa9796d4f0c))
+
+### :sparkles:
+
+- :sparkles: support python 3.14 ([#280](https://github.com/yhino/pipenv-poetry-migrate/pull/280),
+  [`5ad261e`](https://github.com/yhino/pipenv-poetry-migrate/commit/5ad261e6869a0365fa7e0e811eb457472aede247))
+
+### Other
+
+- :bookmark: v0.8.0
+  ([`fb003c3`](https://github.com/yhino/pipenv-poetry-migrate/commit/fb003c32f7b90d2451ca6588ab29ab88e6ed1318))
+
+
 ## v0.7.0 (2025-10-01)
 
 ### :arrow_up:
