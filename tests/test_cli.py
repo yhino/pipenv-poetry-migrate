@@ -4,7 +4,7 @@ from pipenv_poetry_migrate import __version__
 from pipenv_poetry_migrate.cli import app
 from typer.testing import CliRunner
 
-runner = CliRunner(mix_stderr=False)
+runner = CliRunner()
 
 
 def test_main(pipfile: Path, pyproject_toml: Path) -> None:
