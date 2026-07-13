@@ -18,7 +18,7 @@ pytest = ">=7.4.3,<10.0.0"
 pytest-cov = ">=4.1,<8.0"
 mypy = ">=1.6.1,<3.0.0"
 python-semantic-release = "^10.0.2"
-types-setuptools = ">=74.0.0.20240831,<83.0.0.0"
+types-setuptools = ">=74.0.0.20240831,<84.0.0.0"
 ruff = ">=0.5.0,<0.16.0"
 
 [tool.poetry.scripts]
