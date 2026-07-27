@@ -1,3 +1,6 @@
+# Copyright (c) 2020 Yoshiyuki HINO
+# SPDX-License-Identifier: Apache-2.0
+
 from pipenv_poetry_migrate.translator import translate_properties
 
 

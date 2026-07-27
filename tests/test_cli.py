@@ -1,3 +1,6 @@
+# Copyright (c) 2021 Yoshiyuki HINO
+# SPDX-License-Identifier: Apache-2.0
+
 from pathlib import Path
 
 from pipenv_poetry_migrate import __version__
