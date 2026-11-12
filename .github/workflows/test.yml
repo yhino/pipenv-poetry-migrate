@@ -58,7 +58,7 @@ jobs:
     - name: Dump versions
       run: |
         python --version
-        poetry env info
+        poetry --version
         tox --version
     - name: Run Tox
       run: tox -e ${{ matrix.tox-env }}
